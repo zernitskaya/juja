@@ -2,7 +2,7 @@
     background-image: url('../img/icons/#{$name}');
 }
 
-[class*="icon"] {
+[class*="icon-i"] {
     display: block;
     width: 100%;
     height: 100%;
@@ -11,5 +11,5 @@
     background-repeat: no-repeat;
 }
 
-.icon-heart { @include icon('heart.svg'); }
-.icon-arrow { @include icon('arrow.svg'); }
+.icon-i-heart { @include icon('heart.svg'); }
+.icon-i-arrow { @include icon('arrow.svg'); }
