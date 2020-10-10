@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>1.2</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -25,166 +25,197 @@
                     </h1>
                 </div>
             </div>
-            <section class="registration">
 
-                <h2 class="registration__caption">
-                    ЗАРЕГИСТРИРУЙТЕ СВОИ НОГОТОЧКИ
+    </header>
+
+
+    <section class="registration">
+        <div class="container">
+            <h2 class="heading">
+                ЗАРЕГИСТРИРУЙТЕ СВОИ НОГОТОЧКИ
+            </h2>
+
+            <div class="registration__form">
+                <div class="registration__step-one">
+                    <h2 class="registration__form-title">1. Информация о мастере *</h2>
+
+                    <div class="registration__input">
+                        <input type="text" class="item-input" placeholder="ФИО (видят только клиенты)">
+                    </div>
+
+                    <div class="registration__input">
+                        <button class="caption">Услуга *
+                            <small class="registration__prompt-text"> (выберите из списка)</small>
+                            <span class="caption__arrow"><span class="img-arrow"></span></span>
+                        </button>
+                    </div>
+
+                    <div class="registration__input">
+                        <div class="caption">Телефон *</div>
+                        <input type="text" class="item-input" placeholder="+ 7">
+                    </div>
+
+                    <div class="registration__input">
+                        <div class="caption">E-mail</div>
+                        <input type="text" class="item-input">
+                    </div>
+
+                    <div class="registration__input">
+                        <div class="caption">Адрес приема
+                            <small class="registration__prompt-text">(видят только клиенты)</small></div>
+                        <input type="text" class="item-input">
+                    </div>
+                </div>
+
+
+                <div class="registration__step-twu">
+                    <h2 class="registration__form-title">2. Верификация</h2>
+
+                    <div class="registration__input">
+                        <input type="text" class="item-input" placeholder="Придумайте пароль">
+                    </div>
+
+                    <div class="registration__input">
+                        <input type="text" class="item-input" placeholder="Повторите пароль">
+                    </div>
+
+                </div>
+
+                <button class="button--black button">стать мастером</button>
+
+            </div>
+        </div>
+    </section>
+
+
+    <section class="hiden-choice">
+        <div class="container">
+            <div class="hiden-choice__heading-wrap">
+                <h2 class="hiden-choice__heading">
+                    ВЫБЕРИТЕ ИЗ СПИСКА
+                    (начните вводить или выберите из списка)
                 </h2>
+                <input type="text" class="hiden-choice__item" placeholder="поиск">
+                <form class="hiden-choice__text-wrap">
+                    <label class="hiden-choice__label">
+                        <input name="radio" type="radio" class="hiden-choice__radio">
+                        <span class="hiden-choice__ico"></span>
+                        <span class="hiden-choice__text"> косметолог - эстетист</span>
+                    </label>
+                    <label class="hiden-choice__label">
+                        <input name="radio" type="radio" class="hiden-choice__radio">
+                        <span class="hiden-choice__ico"></span>
+                        <span class="hiden-choice__text"> врач - косметолог</span>
+                    </label>
+                    <label class="hiden-choice__label">
+                        <input name="radio" type="radio" class="hiden-choice__radio">
+                        <span class="hiden-choice__ico"></span>
+                        <span class="hiden-choice__text"> массажист</span>
+                    </label>
+                    <label class="hiden-choice__label">
+                        <input name="radio" type="radio" class="hiden-choice__radio">
+                        <span class="hiden-choice__ico"></span>
+                        <span class="hiden-choice__text"> визажист</span>
+                    </label>
+                    <label class="hiden-choice__label">
+                        <input name="radio" type="radio" class="hiden-choice__radio">
+                        <span class="hiden-choice__ico"></span>
+                        <span class="hiden-choice__text"> бровист</span>
+                    </label>
+                    <label class="hiden-choice__label">
+                        <input name="radio" type="radio" class="hiden-choice__radio">
+                        <span class="hiden-choice__ico"></span>
+                        <span class="hiden-choice__text"> грумер</span>
+                    </label>
+                    <label class="hiden-choice__label">
+                        <input name="radio" type="radio" class="hiden-choice__radio">
+                        <span class="hiden-choice__ico"></span>
+                        <span class="hiden-choice__text"> мастер мехенди</span>
+                    </label>
+                    <label class="hiden-choice__label">
+                        <input name="radio" type="radio" class="hiden-choice__radio">
+                        <span class="hiden-choice__ico"></span>
+                        <span class="hiden-choice__text"> матер педикюра</span>
+                    </label>
 
-                <div class="registration__form">
-                    <div class="registration__step-one">
-                        <h2 class="registration__form-title">1. Информация о мастере *</h2>
 
-                        <div class="registration__input">
-                            <input type="text" class="item-input" placeholder="ФИО (видят только клиенты)">
-                        </div>
+                    <label class="hiden-choice__label">
+                        <input name="radio" type="radio" class="hiden-choice__radio">
+                        <span class="hiden-choice__ico"></span>
+                        <span class="hiden-choice__text"> специалист по духовным практикам</span>
+                    </label>
+                    <label class="hiden-choice__label">
+                        <input name="radio" type="radio" class="hiden-choice__radio">
+                        <div class="hiden-choice__ico"></div>
+                        <span class="hiden-choice__text"> йога</span>
+                    </label>
+                    <button class="button--black button--small button hiden-choice__btn">ок</button>
+                </form>
 
-                        <div class="registration__input">
-                            <button class="caption">Услуга *
-                                <small class="registration__prompt-text"> (выберите из списка)</small>
-                                <span class="caption__arrow"><span class="img-arrow"></span></span>
-                            </button>
-                        </div>
-
-                        <div class="registration__input">
-                            <div class="caption">Телефон *</div>
-                            <input type="text" class="item-input" placeholder="+ 7">
-                        </div>
-
-                        <div class="registration__input">
-                            <div class="caption">E-mail</div>
-                            <input type="text" class="item-input">
-                        </div>
-
-                        <div class="registration__input">
-                            <div class="caption">Адрес приема
-                                <small class="registration__prompt-text">(видят только клиенты)</small></div>
-                            <input type="text" class="item-input">
-                        </div>
-                    </div>
-
-
-                    <div class="registration__step-twu">
-                        <h2 class="registration__form-title">2. Верификация</h2>
-
-                        <div class="registration__input">
-                            <input type="text" class="item-input" placeholder="Придумайте пароль">
-                        </div>
-
-                        <div class="registration__input">
-                            <input type="text" class="item-input" placeholder="Повторите пароль">
-                        </div>
-
-                    </div>
-
-                    <button class="button--black button">стать мастером</button>
-
+                <div class="hiden-choice__wrap-button">
+                    <button class="hiden-choice__button">
+                        <span class="hiden-choice__circle">
+                            <span class="icon-i-circle"></span>
+                        </span> добавить свою специальность</button>
                 </div>
-            </section>
+            </div>
 
 
-            <section class="hiden-choice">
-                <div class="container">
-                    <div class="hiden-choice__heading-wrap">
-                        <h2 class="hiden-choice__heading">
-                            ВЫБЕРИТЕ ИЗ СПИСКА
-                            (начните вводить или выберите из списка)
-                        </h2>
-                        <input type="text" class="hiden-choice__item" placeholder="поиск">
-                        <form class="hiden-choice__text-wrap">
-                            <label class="hiden-choice__label">
-                                <input name="radio" type="radio" class="hiden-choice__radio">
-                                <span class="hiden-choice__ico"></span>
-                                <span class="hiden-choice__text"> косметолог - эстетист</span>
-                            </label>
-                            <label class="hiden-choice__label">
-                                <input name="radio" type="radio" class="hiden-choice__radio">
-                                <span class="hiden-choice__ico"></span>
-                                <span class="hiden-choice__text"> врач - косметолог</span>
-                            </label>
-                            <label class="hiden-choice__label">
-                                <input name="radio" type="radio" class="hiden-choice__radio">
-                                <span class="hiden-choice__ico"></span>
-                                <span class="hiden-choice__text"> массажист</span>
-                            </label>
-                            <label class="hiden-choice__label">
-                                <input name="radio" type="radio" class="hiden-choice__radio">
-                                <span class="hiden-choice__ico"></span>
-                                <span class="hiden-choice__text"> визажист</span>
-                            </label>
-                            <label class="hiden-choice__label">
-                                <input name="radio" type="radio" class="hiden-choice__radio">
-                                <span class="hiden-choice__ico"></span>
-                                <span class="hiden-choice__text"> бровист</span>
-                            </label>
-                            <label class="hiden-choice__label">
-                                <input name="radio" type="radio" class="hiden-choice__radio">
-                                <span class="hiden-choice__ico"></span>
-                                <span class="hiden-choice__text"> грумер</span>
-                            </label>
-                            <label class="hiden-choice__label">
-                                <input name="radio" type="radio" class="hiden-choice__radio">
-                                <span class="hiden-choice__ico"></span>
-                                <span class="hiden-choice__text"> мастер мехенди</span>
-                            </label>
-                            <label class="hiden-choice__label">
-                                <input name="radio" type="radio" class="hiden-choice__radio">
-                                <span class="hiden-choice__ico"></span>
-                                <span class="hiden-choice__text"> матер педикюра</span>
-                            </label>
-                            <label class="hiden-choice__label">
-                                <input name="radio" type="radio" class="hiden-choice__radio">
-                                <span class="hiden-choice__ico"></span>
-                                <span class="hiden-choice__text"> специалист по духовным практикам</span>
-                            </label>
-                            <label class="hiden-choice__label">
-                                <input name="radio" type="radio" class="hiden-choice__radio">
-                                <div class="hiden-choice__ico"></div>
-                                <span class="hiden-choice__text"> йога</span>
-                            </label>
-                            <button class="button--black button--small button hiden-choice__btn">ок</button>
-                        </form>
-
-                        <div class="hiden-choice__wrap-button">
-                            <button class="hiden-choice__button">
-                                <span class="hiden-choice__circle">
-                                    <span class="icon-i-circle"></span>
-                                </span> добавить свою специальность</button>
-                        </div>
-                    </div>
-
-
-
-                </div>
-            </section>
-
-            <section class="added">
-                <div class="container">
-                    <div class="added__heading-wrap">
-                        <h2 class="added__heading">
-                            добавление новой специальноти
-                        </h2>
-
-                        <form action="" class="added__form">
-                            <div class="added__input-wrap">
-                                <input type="text" class="item-input added__input" placeholder="введите название">
-                            </div>
-                            <div class="added__input-wrap">
-                                <input type="text" class="item-input added__input" placeholder="краткое описание услуги">
-                            </div>
-                        </form>
-                        <div class="added__text-wrap">
-                            <p class="added__text">Внимание! Администрация Жужи сохраняет за собой право отказать в
-                                добавлении услуг без объяснения причины.
-                            </p>
-                            <button class="button--black button--small button hiden-choice__btn">ок</button>
-                        </div>
-                    </div>
-                </div>
-            </section>
 
         </div>
-    </header>
+    </section>
+
+    <section class="added">
+        <div class="container">
+            <div class="added__heading-wrap">
+                <h2 class="added__heading">
+                    добавление новой специальноти
+                </h2>
+
+                <form action="" class="added__form">
+                    <div class="added__input-wrap">
+                        <input type="text" class="item-input added__input" placeholder="введите название">
+                    </div>
+                    <div class="added__input-wrap">
+                        <input type="text" class="item-input added__input" placeholder="краткое описание услуги">
+                    </div>
+                </form>
+                <div class="added__text-wrap">
+                    <p class="added__text">Внимание! Администрация Жужи сохраняет за собой право отказать в
+                        добавлении услуг без объяснения причины.
+                    </p>
+                    <button class="button--black button--small button hiden-choice__btn">ок</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="map">
+        <div class="container">
+            <div class="map__wrap">
+                <div class="map__input-wrap">
+                    <input type="text" class="item-input map__input" placeholder="начните вводить...">
+                </div>
+                <div class="map__nav-wrap">
+                    <img src="img/pictures/map.png" alt="" class="map__img">
+                </div>
+                <button class="button--black button--small button map__btn">ок</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="done">
+        <div class="container">
+            <div class="done__wrap">
+                <h2 class="done__heading">Успешно! </h2>
+                <p class="done__text">Настройте свой рабочий кабинет</p>
+                <button class="button--black  done__button button">далее</button>
+            </div>
+        </div>
+    </section>
+
+    </div>
+
 </body>
 
 </html>
