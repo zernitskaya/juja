@@ -48,7 +48,7 @@
 
 .hiden-choice__label {
     display: flex;
-    padding-bottom: 28px;
+    margin-bottom: 28px;
 }
 
 .hiden-choice__radio {
@@ -62,6 +62,7 @@
     border-radius: 50%;
     border: 1px solid $brand2-color;
     margin-right: 20px;
+    margin-top: 3px;
 }
 
 .hiden-choice__radio:checked ~ .hiden-choice__ico {
@@ -74,3 +75,34 @@
     letter-spacing: 0.055em;
 }
 
+.hiden-choice__btn {
+    margin-top: 20px;
+}
+
+.hiden-choice__button {
+    border: none;
+}
+
+.hiden-choice__wrap-button {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 70px;
+    margin-left: 20px;
+}
+
+.hiden-choice__button {
+    display: flex;
+    align-items: center;
+    width: 252px;
+    padding-left: 36px;
+    font-weight: 600;
+    font-size: 20px;
+    letter-spacing: 0.055em;
+}
+
+.hiden-choice__circle {
+    width: 40px;
+    height: 40px;
+    margin-right: 20px;
+    flex-shrink: 0;
+}
