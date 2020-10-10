@@ -1,5 +1,4 @@
 .footer {
-    height: 420px;
     background-color: $brand-color;
     margin-top: auto;
 }
@@ -7,8 +6,22 @@
 .footer__wrap {
     display: flex;
     align-items: center;
-    text-align: left;
-    margin-top: 140px;
+    justify-content: space-between;
+    height: 420px;
+
+    @include max {
+        height: 300px;
+    }
+
+    @include exlg {
+        flex-wrap: wrap;
+        height: auto;
+        padding: 48px 0;
+    }
+
+    @include md {
+        display: block;
+    }
 }
 
 .footer__link-logo {
@@ -20,41 +33,81 @@
     height: 81px;
 }
 
-.footer__about {
-    margin-left: 66px;
-}
-
 .footer__nav {
     font-weight: 300;
     font-size: 20px;
     letter-spacing: 0.055em;
+
+    @include exlg {
+        text-align: center;
+        flex: 1;
+        padding: 0 15px;
+    }
+
+    @include md {
+        text-align: center;
+        padding-top: 24px;
+    }
 }
 
-.nav-left {
-    margin-left: 66px;
+.footer__nav:nth-child(2) {
+    @include exlg {
+        text-align: left;
+        padding: 0 15px;
+
+        @include md {
+            text-align: center;
+        }
+    }
 }
 
-.nav-right {
-    margin-left: 206px;
+.footer__list:not(:last-child) {
+    margin-bottom: 20px;
 }
-.footer__list {
-    margin-top: 20px;
+
+.footer__about {
+    @include exlg {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
 }
 
 .footer__about-text {
-    width: 381px;
-    height: 100px;
+    max-width: 381px;
     font-weight: 300;
     font-size: 20px;
     letter-spacing: 0.055em;
     padding-left: 20px;
+
+    @include exlg {
+        padding-left: 0;
+    }
+
+    @include md {
+        font-size: 16px;
+    }
 }
 
 .footer__star {
     display: flex;
     align-items: center;
     padding: 19px;
-    margin-left: 67px;
+
+    @include exlg {
+        text-align: center;
+        justify-content: flex-end;
+        flex: 1;
+        padding: 0 15px;
+    }
+
+    @include md {
+        display: flex;
+        justify-content: center;
+        padding-top: 24px;
+    }
 }
 .footer__star-img {
     width: 32px;

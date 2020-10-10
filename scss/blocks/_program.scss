@@ -1,13 +1,21 @@
 .program {
     overflow: hidden;
-    margin-top: 100px;
-    margin-bottom: 240px;
+    padding-top: 100px;
+    padding-bottom: 240px;
+
+    @include max {
+        padding-top: 30px;
+        padding-bottom: 100px;
+    }
 }
 
 .program__item {
     display: flex;
     word-break: break-word;
-    margin-top: 9px;
+
+    @include md {
+        display: block;
+    }
 }
 
 .program__icon {
@@ -16,6 +24,20 @@
     margin-left: 67px;
     width: 311px;
     height: 240px;
+
+    @include exlg {
+        margin-left: 0;
+    }
+
+    @include md {
+        width: 100px;
+        height: 100px;
+        margin-top: 0;
+    }
+
+    @include sd {
+        margin: 0 auto;
+    }
 }
 
 .program__heading {
@@ -25,29 +47,47 @@
     letter-spacing: 0.055em;
     padding-left: 77px;
     padding-top: 64px;
+
+    @include exlg {
+        padding-left: 0;
+    }
+
+    @include md {
+        padding: 0;
+    }
 }
 
 .program__star {
+    position: relative;
     font-weight: 300;
     font-size: 50px;
-    margin-bottom: 25px;
-}
-
-.program__vector{
-    // position: absolute;
-    width: 200vw;
-    height: 0px;
+    padding-bottom: 25px;
     margin-bottom: 71px;
-    border: 1px solid #484848;
+
+    &:before {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 200vw;
+        height: 1px;
+        border: 1px solid #484848;
+    }
+
+    @include exlg {
+        font-size: 36px;
+    }
+
+    @include sd {
+        padding-top: 8px;
+        margin-bottom: 24px;
+        text-align: center;
+        font-size: 24px;
+    }
 }
 
-
-// .program__card {
-//     font-weight: 300;
-//     font-size: 50px;
-//     margin-bottom: 25px;
-//     font-weight: 600;
-//     font-size: 30px;
-//     line-height: 100%;
-//     letter-spacing: 0.055em;
-// }
+.program__text {
+    @include exlg {
+        font-size: 24px;
+    }
+}
