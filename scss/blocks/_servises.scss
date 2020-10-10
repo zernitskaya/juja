@@ -2,6 +2,10 @@
     padding-top: 256px;
 }
 
+.servises__top {
+    display: flex;
+}
+
 .servises__heading {
     width: 621px;
     padding-top: 41px;
@@ -33,42 +37,6 @@
     padding-left: 145px;
     margin-right: 100px;
 }
-.servis-item {
-    display: flex;
-    word-break: break-word;
-    margin-top: 9px;
-}
-
-
-.servis-item__heading {
-    text-align: left;
-    font-weight: 300;
-    font-size: 30px;
-    line-height: 100%;
-    letter-spacing: 0.055em;
-}
-
-.servis-item__card {
-    font-weight: 600;
-    font-size: 30px;
-    line-height: 100%;
-    letter-spacing: 0.055em;
-}
-
-.heading-right {
-    margin-top: 37px;
-    margin-left: 37px;
-}
-
-.heading-left {
-    margin-left: 50px;
-    margin-bottom: 331px;
-}
-
-.heading-bottom {
-    padding-left: 86px;
-    padding-top: 28px;
-}
 
 .time-icon {
     padding-top: 58px;
@@ -86,6 +54,7 @@
 .servis-item__nav {
     list-style: disc;
     padding: 30px;
+    padding-right: 0;
 }
 .servis-item__list {
     padding: 10px;

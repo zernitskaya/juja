@@ -1,0 +1,31 @@
+.servis-item {
+  display: flex;
+  word-break: break-word;
+
+  &:not(:last-child) {
+    margin-bottom: 331px;
+  }
+}
+
+.servis-item__icon {
+  flex-shrink: 0;
+  width: 180px;
+  height: 180px;
+  margin-right: 34px;
+}
+
+.servis-item__heading {
+  margin-right: 34px;
+  text-align: left;
+  font-weight: 300;
+  font-size: 30px;
+  line-height: 100%;
+  letter-spacing: 0.055em;
+}
+
+.servis-item__card {
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 100%;
+  letter-spacing: 0.055em;
+}

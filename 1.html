@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>1</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -14,11 +14,11 @@
             <div class="header__wrap">
                 <div class="header__wrap-logo">
                     <a href="" class="header__link-logo">
-                        <img src="img/pictures/логотип.svg" alt="juja" class="header__img-logo">
+                        <img src="img/pictures/logo.svg" alt="juja" class="header__img-logo">
                     </a>
                 </div>
 
-                <button type="button" class="open-menu">
+                <button type="button" class="open-menu  js-open-menu">
                     <div class="open-menu__border"></div>
                     <div class="open-menu__border"></div>
                     <div class="open-menu__border"></div>
@@ -36,8 +36,15 @@
                     КОНТРОЛЕМ</h1>
 
                 <div class="previev-saction__heart">
-                    <!-- посмотреть путь иконки -->
-                    <img src="img/icons/heart.svg" alt="" class="previev-saction__icon">
+                   <div class="previev-saction__heart-wrap">
+                       <div class="previev-saction__text">
+                           ОТ БЬЮТИ-МАСТЕРОВ С
+                       </div>
+
+                       <div class="previev-saction__heart-icon">
+                           <div class="icon-i-heart"></div>
+                       </div>
+                   </div>
                 </div>
 
                 <div class="previev-saction__photo">
@@ -68,30 +75,28 @@
 
     <section class="servises">
         <div class="servises__container container">
-
-            <!-- лого плюс текст -->
-            <div class="logo">
-                <div class="logo__wrap">
+            <div class="servises__top">
+                <div class="logo">
                     <div class="logo__picrures">
                         <img src="img/pictures/logowight.svg" alt="" class="logo__img">
                     </div>
                 </div>
 
                 <div class="servises__heading">
-                    <h2 class="servises__text--bold">ЛИЧНЫЙ АССИСТЕНТ МАСТЕРА, ВЕРНЫЙ ПОМОНИК В 
+                    <h2 class="servises__text--bold">ЛИЧНЫЙ АССИСТЕНТ МАСТЕРА, ВЕРНЫЙ ПОМОНИК В
                         СОВЕРШЕНСТВОВАНИИ КАЧЕСТВА ТВОИХ УСЛУГ И ПОВЫШЕНИИ ЛОЯЛЬНОСТИ КЛИЕНТОВ
                     </h2>
                 </div>
             </div>
-            <!-- лого плюс текст -->
 
             <div class="servises__menu">
                 <div class="servises__menu-right">
                     <div class="servis-item">
                         <div class="servis-item__icon">
-                            <img src="img/icons/ПРОФИЛЬ 1.svg" alt="" class="servis-item__img">
+                            <div class="icon-i-profile"></div>
                         </div>
-                        <div class="servis-item__heading  heading-right">
+
+                        <div class="servis-item__heading">
                             <h3 class="servis-item__card card">
                                 КАРТА <br> КЛИЕНТА (персонализированная) с контактной информацией
                             </h3>
@@ -113,14 +118,14 @@
                         </div>
                     </div>
                 </div>
-                
+
                 <div class="servises__menu-left">
                     <div class="servis-item">
                         <div class="servis-item__icon">
-                            <img src="img/icons/ЗАПИСЬ 1.svg" alt="" class="servis-item__img">
+                            <div class="icon-i-clock"></div>
                         </div>
 
-                        <div class="servis-item__heading heading-left">
+                        <div class="servis-item__heading">
                             <h3 class="servis-item__card time-icon">
                                 ТАЙМИНГ <br>
                                 ПРОЦЕДУР
@@ -135,10 +140,10 @@
 
                     <div class="servis-item">
                         <div class="servis-item__icon">
-                            <img src="img/icons/рубль 1.svg" alt="" class="servis-item__img">
+                            <div class="icon-i-rub"></div>
                         </div>
 
-                        <div class="servis-item__heading heading-bottom">
+                        <div class="servis-item__heading">
                             <h3 class="servis-item__card money-icon">
                                 УДОБНЫЙ РАССЧЕТ
                                 ДОХОДОВ И ТРАТ
@@ -158,7 +163,7 @@
         <div class="container">
             <div class="program__item">
                 <div class="program__icon">
-                    <img src="img/icons/звезда 1.svg" alt="" class="program__img">
+                    <div class="icon-i-star"></div>
                 </div>
                 <div class="program__heading">
                     <h3 class="program__star">
@@ -177,10 +182,11 @@
     <footer class="footer">
         <div class="container">
             <div class="footer__wrap">
-
                 <div class="footer__about">
-                    <a href="" class="footer__link-logo"> <img src="img/icons/footer-logp.svg" alt=""
-                            class="footer__logo"></a>
+                    <a href="" class="footer__link-logo">
+                        <img src="img/pictures/logo.svg" alt="" class="footer__logo">
+                    </a>
+
                     <p class="footer__about-text">ЭТО ЛИЧНЫЙ АССИСТЕНТ БЬЮТИ-МАСТЕРА
                         СЕРВИС ДЛЯ ЗАПИСИ НА
                         БЬЮТИ-ПРОЦЕДУРЫ
@@ -203,8 +209,11 @@
                 </div>
 
                 <div class="footer__star">
-                    <img src="img/icons/звезда 3.svg" alt="" class="footer__star-img">
-                    <a href="" class="footer__star-link">
+                    <div class="footer__star-img">
+                        <div class="icon-i-star"></div>
+                    </div>
+
+                    <a href="#" class="footer__star-link">
                         <span class="footer__star-span">РЕФЕРАЛЬНАЯ <br> ПРОГРАММА</span>
                     </a>
                 </div>
@@ -213,20 +222,19 @@
         </div>
     </footer>
 
-    <section class="hiden-menu">
+    <section class="hiden-menu js-hiden-menu">
+        <div class="hiden-menu__overlay js-hiden-menu__everlay"></div>
+
         <div class="container">
-
             <div class="hiden-menu__wrap">
-
                 <h2 class="hiden-menu__heading">МЕНЮ МАСТЕРА</h2>
                 <div class="hiden-menu__vector"></div>
-                <ul class="hiden-menu__nav">
+                <ul class="hiden-menu__nav-list">
                     <li class="hiden-menu__list"><a href="#" class="hiden-menu__nav">Мой профиль</a></li>
                     <li class="hiden-menu__list"><a href="" class="hiden-menu__nav">Мои клиенты</a></li>
                     <li class="hiden-menu__list"><a href="" class="hiden-menu__nav">Мои записи</a></li>
                     <li class="hiden-menu__list hiden-menu__list-bottom"><a href="" class="hiden-menu__nav">Моя
                             статистика</a></li>
-
                 </ul>
 
                 <h2 class="hiden-menu__heading">МЕНЮ КЛИЕНТА</h2>
@@ -242,7 +250,10 @@
                     <a href="" class="hiden-menu__star-link">
                         <span class="hiden-menu__star-text">РЕФЕРАЛЬНАЯ <br> ПРОГРАММА</span>
                     </a>
-                    <img src="img/icons/звезда 2.svg" alt="" class="hiden-menu__star-img">
+
+                    <div class="hiden-menu__star-img">
+                        <div class="icon-i-star"></div>
+                    </div>
                 </div>
 
                 <div class="bottom-nav">
@@ -256,6 +267,8 @@
             </div>
         </div>
     </section>
+
+    <script src="js/main.js"></script>
 </body>
 
 </html>

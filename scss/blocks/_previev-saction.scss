@@ -8,11 +8,30 @@
     overflow: hidden;
 }
 .previev-saction__heart {
-    width: 83px;
+    position: relative;
+    width: 123px;
     flex-shrink: 0;
-    margin-left: 50px;
 }
 
+.previev-saction__heart-wrap {
+    position: absolute;
+    left: -65px;
+    white-space: nowrap;
+    display: flex;
+    align-items: center;
+    transform: rotate(-90deg);
+}
+
+.previev-saction__heart-icon {
+    width: 30px;
+    height: 30px;
+    margin-left: 10px;
+    transform: rotate(90deg);
+}
+
+.previev-saction__text {
+    font-size: 20px;
+}
 
 .previev-saction__headline {
     position: absolute;
@@ -64,9 +83,10 @@
 }
 
 .option__text {
+    margin-right: 26px;
     font-size: 20px;
     letter-spacing: 0.055em;
-    margin-right: 26px;
+    text-align: left;
 }
 
 .option__opasity-text {

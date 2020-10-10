@@ -7,8 +7,13 @@
     justify-content: space-between;
     align-items: center;
 }
+
 .header__wrap-logo {
     margin-left: 19px;
+}
+
+.header__link-logo {
+    display: block;
 }
 
 .header__container {
@@ -18,9 +23,8 @@
 .header__vector {
     position: absolute;
     width: 200vw;
-    height: 0px;
+    height: 1px;
     left: 50px;
-    bottom: 0;
-    top: 119px;
+    bottom: 10px;
     border: 1px solid #484848;
 }

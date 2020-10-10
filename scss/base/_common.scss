@@ -9,13 +9,24 @@ body {
     font-weight: 300;
     text-align: center;
     margin: 0 auto;
-    // letter-spacing: 0.055em; 
+}
+
+body.fixed {
+    overflow: hidden;
+    padding-right: 14px;
 }
 
 .container {
     width: 1503px;
     margin: 0 auto; 
-    // letter-spacing: 0.055em;
-    // letter-spacing: 0.070em;
-    // text-align: center;
+}
+
+a {
+    &:hover {
+        text-decoration: underline;
+    }
+
+    &:active {
+        opacity: .8;
+    }
 }
