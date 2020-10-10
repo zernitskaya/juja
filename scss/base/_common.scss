@@ -1,0 +1,21 @@
+.container {
+    @include max {
+        width: 1200px;
+    }
+}
+
+body {
+    font-family: 'Futura';
+    font-weight: 300;
+    text-align: center;
+    margin: 0 auto;
+    // letter-spacing: 0.055em; 
+}
+
+.container {
+    width: 1503px;
+    margin: 0 auto; 
+    // letter-spacing: 0.055em;
+    // letter-spacing: 0.070em;
+    // text-align: center;
+}

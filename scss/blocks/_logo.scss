@@ -1,0 +1,25 @@
+
+.logo {
+    display: flex;
+    position: relative;
+
+}
+// .logo__wrap {
+//     // margin-right: 168px;
+// }
+
+.logo__picrures{
+    width: 580px;
+    height: 130px;
+    background-color: $brand2-color;
+    position: relative;
+    margin-left: 2px;
+}
+
+
+.logo__img {
+    position: absolute;
+    left: 410px;
+    top: 38px;
+}
+

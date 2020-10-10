@@ -1,0 +1,50 @@
+.program {
+    overflow: hidden;
+    margin-top: 100px;
+    margin-bottom: 240px;
+}
+
+.program__item {
+    display: flex;
+    word-break: break-word;
+    margin-top: 9px;
+}
+
+.program__icon {
+    padding-top: 29px;
+    padding-left: 67px;
+}
+
+.program__heading {
+    text-align: left;
+    font-weight: 300;
+    font-size: 30px;
+    letter-spacing: 0.055em;
+    padding-left: 77px;
+    padding-top: 64px;
+}
+
+.program__star {
+    font-weight: 300;
+    font-size: 50px;
+    margin-bottom: 25px;
+}
+
+.program__vector{
+    // position: absolute;
+    width: 200vw;
+    height: 0px;
+    margin-bottom: 71px;
+    border: 1px solid #484848;
+}
+
+
+// .program__card {
+//     font-weight: 300;
+//     font-size: 50px;
+//     margin-bottom: 25px;
+//     font-weight: 600;
+//     font-size: 30px;
+//     line-height: 100%;
+//     letter-spacing: 0.055em;
+// }
