@@ -1,7 +1,6 @@
 body {
     font-family: 'Futura';
     font-weight: 300;
-    text-align: center;
     margin: 0 auto;
 }
 
@@ -25,11 +24,11 @@ body.fixed {
     }
 
     @include lg {
-        max-width: 960px;
+        //max-width: 960px;
     }
 
     @include md {
-        max-width: 720px;
+        //max-width: 720px;
     }
 
     @include sd {
@@ -46,7 +45,3 @@ a {
         opacity: .8;
     }
 }
-
-// .header + * ~ *{
-//     display: none;
-// }

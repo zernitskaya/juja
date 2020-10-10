@@ -5,12 +5,24 @@
     @include exlg {
         padding-top: 55px;
     }
+
+    @include exlg {
+        padding-top: 36px;
+    }
+}
+
+.previev-saction__container {
+    position: relative;
 }
 
 .previev-saction__wrap {
     display: flex;
     align-items: center;
     position: relative;
+
+    @include sd {
+        display: block;
+    }
 }
 
 .previev-saction__heart {
@@ -20,6 +32,10 @@
 
     @include exlg {
         width: 40px;
+    }
+
+    @include lg {
+        display: none;
     }
 }
 
@@ -49,6 +65,7 @@
 
 .previev-saction__headline {
     position: absolute;
+    z-index: 1;
     width: 688px;
     text-align: left;
     left: 366px;
@@ -64,12 +81,52 @@
     @include exlg {
         font-size: 60px;
     }
+
+    @include lg {
+        position: static;
+        margin: 0 auto;
+        margin-bottom: 24px;
+        text-align: center;
+        font-size: 44px;
+        width: 100%;
+        max-width: 600px;
+    }
+
+    @include sd {
+        font-size: 24px;
+    }
 }
 
 .previev-saction__photo {
-    width: 501px;
-    height: 683px;
+    width: 45%;
+    max-width: 501px;
     flex-shrink: 0;
+
+    @include md {
+        margin: 0 auto;
+    }
+
+    @include sd {
+        margin-bottom: 24px;
+    }
+}
+
+.previev-saction__photo-wrap {
+    position: relative;
+    padding-bottom: 136%;
+
+    @include md {
+        padding-bottom: 100%;
+    }
+}
+
+.previev-saction__img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 .previev-saction__img {
@@ -86,10 +143,28 @@
     @include max {
         padding-left: 50px;
     }
+
+    @include lg {
+        padding-top: 0;
+        padding-left: 24px;
+    }
+
+    @include sd {
+        padding-left: 0;
+    }
 }
 
 .previev-saction__button {
     display: flex;
     flex-direction: column;
     margin-top: 90px;
+
+    @include exlg {
+        margin-top: 60px;
+    }
+
+    @include sd {
+        align-items: center;
+        margin-top: 24px;
+    }
 }

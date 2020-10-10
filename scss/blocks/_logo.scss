@@ -1,27 +1,39 @@
-
 .logo {
     display: flex;
     position: relative;
 
+    &:before {
+        content: '';
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: 200vw;
+        height: 100%;
+        background-color: $brand2-color;
+    }
 }
-// .logo__wrap {
-//     // margin-right: 168px;
-// }
 
 .logo__picrures{
+    position: relative;
     display: flex;
     align-items: center;
     justify-content: flex-end;
-    width: 580px;
+    width: 100%;
     height: 130px;
     background-color: $brand2-color;
-    position: relative;
-    margin-left: 2px;
-}
 
+    @include exlg {
+        height: 90px;
+    }
+}
 
 .logo__img {
     width: 170px;
     height: 61px;
+    object-fit: contain;
+
+    @include exlg {
+        width: 120px;
+    }
 }
 
