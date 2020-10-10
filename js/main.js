@@ -4,6 +4,7 @@ const openMenu = document.querySelector('.js-open-menu');
 const menu = document.querySelector('.js-hiden-menu');
 const overlay = document.querySelector('.js-hiden-menu__everlay');
 const body = document.querySelector('body');
+const close = document.querySelector('.js-close');
 
 openMenu.addEventListener('click', function(e) {
     this.classList.toggle('active');
@@ -12,6 +13,11 @@ openMenu.addEventListener('click', function(e) {
 });
 
 overlay.addEventListener('click', function(e) {
+    menu.classList.toggle('active');
+    body.classList.toggle('fixed');
+});
+
+close.addEventListener('click', function(e) {
     menu.classList.toggle('active');
     body.classList.toggle('fixed');
 });
