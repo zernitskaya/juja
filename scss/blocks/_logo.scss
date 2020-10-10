@@ -9,6 +9,9 @@
 // }
 
 .logo__picrures{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
     width: 580px;
     height: 130px;
     background-color: $brand2-color;
@@ -18,8 +21,7 @@
 
 
 .logo__img {
-    position: absolute;
-    left: 410px;
-    top: 38px;
+    width: 170px;
+    height: 61px;
 }
 

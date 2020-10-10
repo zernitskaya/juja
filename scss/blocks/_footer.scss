@@ -8,8 +8,16 @@
     display: flex;
     align-items: center;
     text-align: left;
-    // justify-content: space-between;
     margin-top: 140px;
+}
+
+.footer__link-logo {
+    display: block;
+}
+
+.footer__logo {
+    width: 105px;
+    height: 81px;
 }
 
 .footer__about {
@@ -49,7 +57,9 @@
     margin-left: 67px;
 }
 .footer__star-img {
-    padding-right: 20px;
+    width: 32px;
+    height: 38px;
+    margin-right: 20px;
 }
 
 .footer__star-span {

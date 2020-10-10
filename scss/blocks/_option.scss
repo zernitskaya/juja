@@ -1,0 +1,53 @@
+.options {
+  display: flex;
+  align-items: center;
+
+  @include exlg {
+    display: block;
+  }
+}
+
+.options__heading-one {
+  width: 210px;
+  height: 40px;
+
+  @include exlg {
+    margin-bottom: 16px;
+  }
+}
+
+.option__heading-two {
+  display: flex;
+  align-items: center;
+  width: 721px;
+  height: 77px;
+  background-color: rgba(166, 230, 219, 0.4);
+  position: relative;
+  margin-left: 19px;
+
+  @include exlg {
+    margin: 0;
+  }
+}
+
+.option__text {
+  margin-right: 26px;
+  font-size: 20px;
+  letter-spacing: 0.055em;
+  text-align: left;
+}
+
+.option__opasity-text {
+  z-index: 1;
+  width: 280px;
+  text-align: left;
+  padding-left: 7px;
+}
+
+.option__vector {
+  width: 200vw;
+  position: absolute;
+  left: 0;
+  background: #ddf5f2;
+  height: 100%;
+}
