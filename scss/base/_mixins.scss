@@ -3,3 +3,27 @@
         @content;
     }
 }
+
+@mixin exlg() {
+    @media screen and (max-width: 1200px) {
+        @content;
+    }
+}
+
+@mixin lg() {
+    @media screen and (max-width: 992px) {
+        @content;
+    }
+}
+
+@mixin md() {
+    @media screen and (max-width: 768px) {
+        @content;
+    }
+}
+
+@mixin sd() {
+    @media screen and (max-width: 576px) {
+        @content;
+    }
+}

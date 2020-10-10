@@ -1,16 +1,26 @@
+.previev-saction {
+    overflow: hidden;
+    padding-top: 68px;
+
+    @include exlg {
+        padding-top: 55px;
+    }
+}
+
 .previev-saction__wrap {
     display: flex;
     align-items: center;
-    margin-top: 68px;
     position: relative;
 }
-.previev-saction {
-    overflow: hidden;
-}
+
 .previev-saction__heart {
     position: relative;
     width: 123px;
     flex-shrink: 0;
+
+    @include exlg {
+        width: 40px;
+    }
 }
 
 .previev-saction__heart-wrap {
@@ -20,6 +30,10 @@
     display: flex;
     align-items: center;
     transform: rotate(-90deg);
+
+    @include exlg {
+        left: -113px;
+    }
 }
 
 .previev-saction__heart-icon {
@@ -42,6 +56,14 @@
     font-weight: 600;
     font-size: 90px;
     letter-spacing: 0.055em;
+
+    @include max {
+        margin-bottom: 16px;
+    }
+
+    @include exlg {
+        font-size: 60px;
+    }
 }
 
 .previev-saction__photo {
@@ -58,49 +80,12 @@
 .previev-saction__section-left {
     display: flex;
     flex-direction: column;
-    padding: 98px 0px 0px 127px;
-}
+    padding-left: 127px;
+    padding-top: 89px;
 
-.previev-saction__options {
-    display: flex;
-    align-items: center; 
-}
-
-.options__heading-one {
-    width: 210px;
-    height: 40px;
-    // align-items: center;
-}
-
-.option__heading-two {
-    display: flex;
-    align-items: center;
-    width: 721px;
-    height: 77px;
-    background-color: rgba(166, 230, 219, 0.4);
-    position: relative;
-    margin-left: 19px;
-}
-
-.option__text {
-    margin-right: 26px;
-    font-size: 20px;
-    letter-spacing: 0.055em;
-    text-align: left;
-}
-
-.option__opasity-text {
-    z-index: 1;
-    width: 280px;
-    text-align: left;
-    padding-left: 7px;
-}
-.option__vector {
-    width: 200vw;
-    position: absolute;
-    left: 0;
-    background: #ddf5f2;
-    height: 100%;
+    @include max {
+        padding-left: 50px;
+    }
 }
 
 .previev-saction__button {
