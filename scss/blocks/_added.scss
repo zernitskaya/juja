@@ -1,19 +1,34 @@
 .added {
-     // display: none;
-    // position: fixed;
-    // z-index: 1;
+    display: none;
+    position: fixed;
+    z-index: 1;
     width: 100%;
     height: 100%;
     top: 0;
     left: 0;
-    margin-bottom: 200px;
-    padding-top: 69px;
-    padding-right: 32px; 
-    // background-color: rgba(196, 196, 196, 0.4);
+    padding: 24px 0;
+    background-color: rgba(196, 196, 196, 0.4);
+    overflow: auto;
+}
+
+.added.active {
+    display: block;
+}
+
+.added__overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
 }
 
 .added__heading-wrap {
-    width: 1113px;
+    position: relative;
+    z-index: 1;
+    max-width: 1113px;
+    width: 100%;
     background: #FFFFFF;
     box-shadow: 30px 60px 30px 15px rgba(0, 0, 0, 0.1);
     border-radius: 50px;
@@ -36,6 +51,10 @@
 .added__form {
     margin-left: 110px;
     margin-bottom: 35px;
+}
+
+.added__input-wrap {
+    margin-bottom: 80px;
 }
 
 .added__input {

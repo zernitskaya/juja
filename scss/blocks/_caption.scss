@@ -1,11 +1,28 @@
 .caption {
+    display: flex;
+    align-items: center;
     font-weight: 600;
     font-size: 20px;
     letter-spacing: 0.055em;
-    
+    white-space: nowrap;
 }
 
 .caption__arrow {
     width: 19px;
     height: 19px;
 }
+
+.caption__prompt-text {
+    margin-left: 4px;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 100%;
+    letter-spacing: 0.055em;
+}
+
+.caption__arrow {
+    width: 16px;
+    height: 16px;
+    margin-left: 10px;
+}
+
