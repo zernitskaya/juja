@@ -33,4 +33,9 @@
     &:active {
         opacity: .7;
     }
+
+    @include exlg {
+        width: 30px;
+        height: 30px;
+    }
 }

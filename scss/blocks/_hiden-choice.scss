@@ -25,10 +25,17 @@
     height: 100%;
 }
 
+.hiden-choice__close {
+    position: absolute;
+    right: 26px;
+    top: 21px;
+}
+
 .hiden-choice__heading-wrap {
     position: relative;
     z-index: 1;
-    width: 667px;
+    max-width: 667px;
+    width: 100%;
     background: #DBF5F1;
     box-shadow: 30px 60px 30px 15px rgba(0, 0, 0, 0.1);
     border-radius: 50px;
@@ -37,19 +44,51 @@
     padding-left: 67px;
     padding-right: 67px;
     padding-bottom: 50px;
+    padding-top: 48px;
+
+    @include exlg {
+        padding: 48px;
+    }
+
+    @include sd {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 36px 24px;
+        border-radius: 16px;
+    }
 }
 
 .hiden-choice__heading {
     font-weight: 600;
     font-size: 20px;
     letter-spacing: 0.055em;
-    width: 381px;
-    padding-top: 48px;
+    max-width: 381px;
+    width: 100%;
     margin-bottom: 40px;
     margin-left: 52px;
+
+    @include exlg {
+        margin-left: 0;
+    }
+
+    @include lg {
+        font-size: 20px;
+    }
+
+    @include md {
+        font-size: 18px;
+    }
+
+    @include sd {
+        max-width: 100%;
+        padding: 0 34px;
+        text-align: center;
+    }
 }
 
 .hiden-choice__input-search {
+    width: 100%;
     margin-left: auto;
     margin-right: auto;
     max-width: 420px;
@@ -58,11 +97,20 @@
 
 .hiden-choice__text-wrap {
     padding-left: 110px;
+
+    @include exlg {
+        padding-left: 0;
+    }
 }
 
 .hiden-choice__label {
     display: flex;
+    align-items: center;
     margin-bottom: 28px;
+
+    @include sd {
+        margin-bottom: 18px;
+    }
 }
 
 .hiden-choice__radio {
@@ -88,6 +136,10 @@
     font-weight: 300;
     font-size: 25px;
     letter-spacing: 0.055em;
+
+    @include sd {
+        font-size: 18px;
+    }
 }
 
 .hiden-choice__btn {
@@ -101,8 +153,13 @@
 .hiden-choice__wrap-button {
     display: flex;
     justify-content: flex-end;
+    align-self: flex-end;
     margin-top: 70px;
     margin-left: 20px;
+
+    @include sd {
+        margin-top: 48px;
+    }
 }
 
 .hiden-choice__button {
@@ -113,6 +170,10 @@
     font-weight: 600;
     font-size: 20px;
     letter-spacing: 0.055em;
+
+    @include sd {
+        font-size: 16px;
+    }
 }
 
 .hiden-choice__circle {
