@@ -1,0 +1,26 @@
+.form__step:not(:first-child) {
+    margin-top: 90px;
+}
+
+.form__form-title {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 100%;
+    letter-spacing: 0.055em;
+}
+
+.form__form-title {
+    margin-bottom: 20px;
+}
+
+.form__caption {
+    margin-bottom: 20px;
+}
+
+.form__input:not(:last-child) {
+    margin-bottom: 40px;
+}
+
+.form__btn {
+    padding-top: 36px;
+}

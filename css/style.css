@@ -1388,9 +1388,10 @@ a:active {
   align-items: center;
 }
 
-.header-page__heading {
-  width: 621px;
-  margin-left: 29px;
+.header-page__wrap-title {
+  width: 100%;
+  max-width: 580px;
+  margin-right: 29px;
 }
 
 .header-page__text--small {
@@ -1416,23 +1417,39 @@ a:active {
   font-weight: 300;
   font-size: 20px;
   line-height: 100%;
-  /* or 20px */
   letter-spacing: 0.055em;
 }
 
-.registration__form-title {
+.form__step:not(:first-child) {
+  margin-top: 90px;
+}
+
+.form__form-title {
   font-weight: 600;
   font-size: 20px;
   line-height: 100%;
-  /* or 20px */
   letter-spacing: 0.055em;
+}
+
+.form__form-title {
+  margin-bottom: 20px;
+}
+
+.form__caption {
+  margin-bottom: 20px;
+}
+
+.form__input:not(:last-child) {
+  margin-bottom: 40px;
+}
+
+.form__btn {
+  padding-top: 36px;
 }
 
 .item-input {
   width: 250px;
   border-bottom: 1px solid #484848;
-  margin-bottom: 40px;
-  margin-top: 20px;
   padding-bottom: 20px;
   font-weight: 300;
   font-size: 20px;
