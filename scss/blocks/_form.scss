@@ -11,10 +11,15 @@
 
 .form__form-title {
     margin-bottom: 20px;
+    white-space: nowrap;
 }
 
-.form__caption {
+.form__caption:not(:last-child) {
     margin-bottom: 20px;
+}
+
+.form__input {
+    padding-left: 20px;
 }
 
 .form__input:not(:last-child) {
@@ -23,4 +28,5 @@
 
 .form__btn {
     padding-top: 36px;
+    padding-left: 20px;
 }
