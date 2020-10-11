@@ -12,10 +12,10 @@
     <header class="header-page">
         <div class="container">
             <div class="header-page__wrap">
-                <div class="logo">
-                    <div class="logo__wrap">
+                <div class="header-page__wrap-title">
+                    <div class="logo">
                         <div class="logo__picrures">
-                            <img src="/img/pictures/logowight.svg" alt="" class="logo__img">
+                            <img src="img/pictures/logowight.svg" alt="" class="logo__img">
                         </div>
                     </div>
                 </div>
@@ -25,9 +25,8 @@
                     </h1>
                 </div>
             </div>
-
+        </div>
     </header>
-
 
     <section class="registration">
         <div class="container">
@@ -35,55 +34,58 @@
                 ЗАРЕГИСТРИРУЙТЕ СВОИ НОГОТОЧКИ
             </h2>
 
-            <div class="registration__form">
-                <div class="registration__step-one">
-                    <h2 class="registration__form-title">1. Информация о мастере *</h2>
+            <form class="registration__form form">
+                <fieldset class="form__step">
+                    <legend class="form__form-title">1. Информация о мастере *</legend>
 
-                    <div class="registration__input">
+                    <div class="form__input">
                         <input type="text" class="item-input" placeholder="ФИО (видят только клиенты)">
                     </div>
 
-                    <div class="registration__input">
-                        <button class="caption">Услуга *
+                    <div class="form__input">
+                        <button class="caption  form__caption">
+                            Услуга *
                             <small class="registration__prompt-text"> (выберите из списка)</small>
                             <span class="caption__arrow"><span class="img-arrow"></span></span>
                         </button>
                     </div>
 
-                    <div class="registration__input">
-                        <div class="caption">Телефон *</div>
+                    <div class="form__input">
+                        <div class="caption form__caption">Телефон *</div>
                         <input type="text" class="item-input" placeholder="+ 7">
                     </div>
 
-                    <div class="registration__input">
-                        <div class="caption">E-mail</div>
-                        <input type="text" class="item-input">
+                    <div class="form__input">
+                        <div class="caption form__caption">E-mail</div>
+                        <input type="text" class="item-input" placeholder="email">
                     </div>
 
-                    <div class="registration__input">
-                        <div class="caption">Адрес приема
-                            <small class="registration__prompt-text">(видят только клиенты)</small></div>
+                    <div class="form__input">
+                        <div class="caption form__caption">
+                            Адрес приема
+                            <small class="registration__prompt-text">(видят только клиенты)</small>
+                        </div>
+
                         <input type="text" class="item-input">
                     </div>
-                </div>
+                </fieldset>
 
+                <fieldset class="form__step">
+                    <legend class="form__form-title">2. Верификация</legend>
 
-                <div class="registration__step-twu">
-                    <h2 class="registration__form-title">2. Верификация</h2>
-
-                    <div class="registration__input">
+                    <div class="form__input">
                         <input type="text" class="item-input" placeholder="Придумайте пароль">
                     </div>
 
-                    <div class="registration__input">
+                    <div class="form__input">
                         <input type="text" class="item-input" placeholder="Повторите пароль">
                     </div>
+                </fieldset>
 
+                <div class="form__btn">
+                    <button class="button--black button">стать мастером</button>
                 </div>
-
-                <button class="button--black button">стать мастером</button>
-
-            </div>
+            </form>
         </div>
     </section>
 
@@ -95,55 +97,64 @@
                     ВЫБЕРИТЕ ИЗ СПИСКА
                     (начните вводить или выберите из списка)
                 </h2>
+
                 <input type="text" class="hiden-choice__item" placeholder="поиск">
+
                 <form class="hiden-choice__text-wrap">
                     <label class="hiden-choice__label">
                         <input name="radio" type="radio" class="hiden-choice__radio">
                         <span class="hiden-choice__ico"></span>
                         <span class="hiden-choice__text"> косметолог - эстетист</span>
                     </label>
+
                     <label class="hiden-choice__label">
                         <input name="radio" type="radio" class="hiden-choice__radio">
                         <span class="hiden-choice__ico"></span>
                         <span class="hiden-choice__text"> врач - косметолог</span>
                     </label>
+
                     <label class="hiden-choice__label">
                         <input name="radio" type="radio" class="hiden-choice__radio">
                         <span class="hiden-choice__ico"></span>
                         <span class="hiden-choice__text"> массажист</span>
                     </label>
+
                     <label class="hiden-choice__label">
                         <input name="radio" type="radio" class="hiden-choice__radio">
                         <span class="hiden-choice__ico"></span>
                         <span class="hiden-choice__text"> визажист</span>
                     </label>
+
                     <label class="hiden-choice__label">
                         <input name="radio" type="radio" class="hiden-choice__radio">
                         <span class="hiden-choice__ico"></span>
                         <span class="hiden-choice__text"> бровист</span>
                     </label>
+
                     <label class="hiden-choice__label">
                         <input name="radio" type="radio" class="hiden-choice__radio">
                         <span class="hiden-choice__ico"></span>
                         <span class="hiden-choice__text"> грумер</span>
                     </label>
+
                     <label class="hiden-choice__label">
                         <input name="radio" type="radio" class="hiden-choice__radio">
                         <span class="hiden-choice__ico"></span>
                         <span class="hiden-choice__text"> мастер мехенди</span>
                     </label>
+
                     <label class="hiden-choice__label">
                         <input name="radio" type="radio" class="hiden-choice__radio">
                         <span class="hiden-choice__ico"></span>
                         <span class="hiden-choice__text"> матер педикюра</span>
                     </label>
 
-
                     <label class="hiden-choice__label">
                         <input name="radio" type="radio" class="hiden-choice__radio">
                         <span class="hiden-choice__ico"></span>
                         <span class="hiden-choice__text"> специалист по духовным практикам</span>
                     </label>
+
                     <label class="hiden-choice__label">
                         <input name="radio" type="radio" class="hiden-choice__radio">
                         <div class="hiden-choice__ico"></div>
@@ -156,12 +167,11 @@
                     <button class="hiden-choice__button">
                         <span class="hiden-choice__circle">
                             <span class="icon-i-circle"></span>
-                        </span> добавить свою специальность</button>
+                        </span>
+                        добавить свою специальность
+                    </button>
                 </div>
             </div>
-
-
-
         </div>
     </section>
 

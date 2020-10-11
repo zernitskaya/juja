@@ -3,10 +3,12 @@
     align-items: center;
 }
 
-.header-page__heading {
-    width: 621px;
-    margin-left: 29px;
+.header-page__wrap-title {
+    width: 100%;
+    max-width: 580px;
+    margin-right: 29px;
 }
+
 .header-page__text--small {
     font-weight: 300;
     font-size: 30px;
