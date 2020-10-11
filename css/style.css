@@ -1598,9 +1598,10 @@ a:active {
   font-weight: 600;
   font-size: 40px;
   letter-spacing: 0.055em;
-  width: 310px;
+  max-width: 310px;
   padding-top: 48px;
   margin-bottom: 100px;
+  z-index: 1;
 }
 
 .added__form {
@@ -1979,6 +1980,64 @@ a:active {
   margin: 0 auto;
   text-align: left;
   padding-left: 53px;
+}
+
+.query {
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  margin-bottom: 200px;
+  padding-top: 69px;
+  padding-right: 32px;
+}
+
+.query-wrap {
+  width: 1113px;
+  position: relative;
+  border-radius: 50px;
+  text-align: left;
+  margin: 0 auto;
+  padding-left: 67px;
+  padding-right: 67px;
+  padding-bottom: 50px;
+  background: #DBF5F1;
+  box-shadow: 30px 60px 30px 15px rgba(0, 0, 0, 0.1);
+  border-radius: 50px;
+}
+
+.query__heading {
+  max-width: 783px;
+  font-weight: 600;
+  font-size: 40px;
+  letter-spacing: 0.055em;
+  padding-top: 48px;
+  margin-bottom: 100px;
+  z-index: 1;
+}
+
+.query__form {
+  display: flex;
+  align-items: start;
+}
+
+.query__form-mail {
+  width: 690px;
+  height: 84px;
+}
+
+.query__form-area {
+  width: 690px;
+  max-height: 200px;
+  background: #FFFFFF;
+  margin-bottom: 35px;
+}
+
+.query__form-title {
+  width: 100px;
+  font-weight: 300;
+  font-size: 20px;
+  letter-spacing: 0.055em;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -28,9 +28,10 @@
     font-weight: 600;
     font-size: 40px;
     letter-spacing: 0.055em;
-    width: 310px;
+    max-width: 310px;
     padding-top: 48px;
     margin-bottom: 100px;
+    z-index: 1;
 }
 
 .added__form {
