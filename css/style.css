@@ -1663,9 +1663,10 @@ button:active {
   font-weight: 600;
   font-size: 40px;
   letter-spacing: 0.055em;
-  width: 310px;
+  max-width: 310px;
   padding-top: 48px;
   margin-bottom: 100px;
+  z-index: 1;
 }
 
 .added__form {
@@ -2081,6 +2082,64 @@ button:active {
   padding-left: 53px;
 }
 
+.query {
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  margin-bottom: 200px;
+  padding-top: 69px;
+  padding-right: 32px;
+}
+
+.query-wrap {
+  width: 1113px;
+  position: relative;
+  border-radius: 50px;
+  text-align: left;
+  margin: 0 auto;
+  padding-left: 67px;
+  padding-right: 67px;
+  padding-bottom: 50px;
+  background: #DBF5F1;
+  box-shadow: 30px 60px 30px 15px rgba(0, 0, 0, 0.1);
+  border-radius: 50px;
+}
+
+.query__heading {
+  max-width: 783px;
+  font-weight: 600;
+  font-size: 40px;
+  letter-spacing: 0.055em;
+  padding-top: 48px;
+  margin-bottom: 100px;
+  z-index: 1;
+}
+
+.query__form {
+  display: flex;
+  align-items: start;
+}
+
+.query__form-mail {
+  width: 690px;
+  height: 84px;
+}
+
+.query__form-area {
+  width: 690px;
+  max-height: 200px;
+  background: #FFFFFF;
+  margin-bottom: 35px;
+}
+
+.query__form-title {
+  width: 100px;
+  font-weight: 300;
+  font-size: 20px;
+  letter-spacing: 0.055em;
+}
+
 .input-button {
   position: relative;
   height: 44px;
@@ -2120,6 +2179,63 @@ button:active {
   height: 100%;
   border-bottom: 1px solid #000;
   font-size: 20px;
+}
+
+.profile {
+  padding-top: 68px;
+}
+
+.profile__saction {
+  display: flex;
+}
+
+.profile__input-wrap {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.profile__headline-wrap {
+  margin-left: 100px;
+}
+
+.profile__headline {
+  width: 600px;
+  font-weight: 600;
+  font-size: 48px;
+  letter-spacing: 0.055em;
+}
+
+.profile__photo {
+  margin-top: 146px;
+}
+
+.profile__input {
+  padding-left: 20px;
+}
+
+.profile__input:not(:last-child) {
+  margin-bottom: 40px;
+}
+
+.profile__input-button {
+  position: relative;
+  height: 44px;
+  width: 250px;
+  padding-left: 37px;
+  font-size: 20px;
+}
+
+.profile__caption {
+  display: flex;
+  align-items: center;
+  font-weight: 600;
+  font-size: 20px;
+  letter-spacing: 0.055em;
+}
+
+.profile__input-adres {
+  width: 170px;
+  margin-right: 105px;
 }
 
 /*# sourceMappingURL=style.css.map */
