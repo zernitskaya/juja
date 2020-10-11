@@ -2924,7 +2924,20 @@ button:active {
 }
 
 .acordion__desc {
+  display: none;
   padding-top: 70px;
+}
+
+.acordion__desc.active {
+  display: block;
+}
+
+.acordion__icon {
+  transform: rotate(180deg);
+}
+
+.acordion__item.active .acordion__icon {
+  transform: rotate(0);
 }
 
 .gallery {
