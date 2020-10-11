@@ -21,6 +21,11 @@
     const mapOverlay = document.querySelector('.js-map__overlay');
     const mapClose = document.querySelector('.js-close-map');
 
+    const queryOpen = document.querySelector('.js-open-query');
+    const queryItem = document.querySelector('.js-query');
+    const queryOverlay = document.querySelector('.js-query__overlay');
+    const queryClose = document.querySelector('.js-close-query');
+
     body.addEventListener('click', function (e) {
         if (isClosest(e.target, menuBtn)) {
             menu.classList.toggle('active');
@@ -76,6 +81,21 @@
 
         if (isClosest(e.target, mapClose)) {
             map.classList.toggle('active');
+            body.classList.toggle('fixed');
+        }
+
+        if (isClosest(e.target, queryOpen)) {
+            queryItem.classList.toggle('active');
+            body.classList.toggle('fixed');
+        }
+
+        if (isClosest(e.target, queryOverlay)) {
+            queryItem.classList.toggle('active');
+            body.classList.toggle('fixed');
+        }
+
+        if (isClosest(e.target, queryClose)) {
+            queryItem.classList.toggle('active');
             body.classList.toggle('fixed');
         }
     });
