@@ -1,0 +1,33 @@
+.acordion {
+    padding-bottom: 70px;
+}
+
+.acordion__item:not(:last-child) {
+    margin-bottom: 70px;
+}
+
+.acordion__title {
+    display: flex;
+    align-items: center;
+    padding-left: 70px;
+    cursor: pointer;
+
+    &:active {
+        opacity: .7;
+    }
+
+    @include md {
+        padding: 0;
+    }
+}
+
+.acordion__icon {
+    width: 26px;
+    height: 26px;
+    margin-left: 20px;
+    margin-top: -10px;
+}
+
+.acordion__desc {
+    padding-top: 70px;
+}
