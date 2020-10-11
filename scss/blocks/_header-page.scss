@@ -4,9 +4,13 @@
 }
 
 .header-page__wrap-title {
-    width: 100%;
+    width: 50%;
     max-width: 580px;
     margin-right: 29px;
+
+    @include exlg {
+        margin-right: 16px;
+    }
 }
 
 .header-page__text--small {
@@ -14,4 +18,8 @@
     font-size: 30px;
     letter-spacing: 0.055em;
     text-align: left;
+
+    @include exlg {
+        font-size: 20px;
+    }
 }

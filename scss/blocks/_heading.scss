@@ -1,7 +1,6 @@
 .heading {
     text-align: left;
     max-width: 535px;
-    height: 96px;
     margin: 0 auto;
     font-weight: 600;
     font-size: 48px;
@@ -9,4 +8,23 @@
     letter-spacing: 0.055em;
     margin-bottom: 111px;
     padding-right: 72px;
+
+    @include max {
+        font-size: 36px;
+    }
+
+    @include exlg {
+        font-size: 32px;
+        margin-bottom: 64px;
+    }
+
+    @include lg {
+        font-size: 28px;
+        padding-right: 0;
+        text-align: center;
+    }
+
+    @include md {
+        font-size: 24px;
+    }
 }

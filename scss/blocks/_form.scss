@@ -29,4 +29,10 @@
 .form__btn {
     padding-top: 36px;
     padding-left: 20px;
+
+    @include sd {
+        display: flex;
+        justify-content: center;
+        padding-left: 0;
+    }
 }

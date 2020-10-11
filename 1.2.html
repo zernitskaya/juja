@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 
 <head>
     <meta charset="UTF-8">
@@ -57,7 +57,7 @@
 
                     <div class="form__input">
                         <div class="caption form__caption">E-mail</div>
-                        <input type="text" class="item-input" placeholder="email">
+                        <input type="text" class="item-input" placeholder="E-mail">
                     </div>
 
                     <div class="form__input">
@@ -92,6 +92,14 @@
                     <button class="button--black button">стать мастером</button>
                 </div>
             </form>
+
+            <div class="registration__helper">
+                <button class="helper" type="button">
+                <span class="helper__icon">
+                    <span class="icon-i-helper"></span>
+                </span>
+                </button>
+            </div>
         </div>
     </section>
 
@@ -100,6 +108,10 @@
 
         <div class="container">
             <div class="hiden-choice__heading-wrap">
+                <div class="hiden-choice__close">
+                    <button class="close js-close-select" type="button"></button>
+                </div>
+
                 <h2 class="hiden-choice__heading">
                     ВЫБЕРИТЕ ИЗ СПИСКА
                     (начните вводить или выберите из списка)
@@ -194,6 +206,10 @@
         <div class="added__overlay js-added__overlay"></div>
         <div class="container">
             <div class="added__heading-wrap">
+                <div class="added__close">
+                    <button class="close js-close-added" type="button"></button>
+                </div>
+
                 <h2 class="added__heading">
                     добавление новой специальноти
                 </h2>
@@ -202,14 +218,17 @@
                     <div class="added__input-wrap">
                         <input type="text" class="item-input added__input" placeholder="введите название">
                     </div>
+
                     <div class="added__input-wrap">
                         <input type="text" class="item-input added__input" placeholder="краткое описание услуги">
                     </div>
                 </form>
+
                 <div class="added__text-wrap">
                     <p class="added__text">Внимание! Администрация Жужи сохраняет за собой право отказать в
                         добавлении услуг без объяснения причины.
                     </p>
+
                     <button class="button--black button--small button hiden-choice__btn">ок</button>
                 </div>
             </div>
@@ -221,6 +240,10 @@
 
         <div class="container">
             <div class="map__wrap">
+                <div class="map__close">
+                    <button class="close js-close-map" type="button"></button>
+                </div>
+
                 <div class="map__input-wrap">
                     <input type="text" class="item-input map__input" placeholder="начните вводить...">
                 </div>

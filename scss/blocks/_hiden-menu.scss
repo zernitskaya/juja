@@ -54,6 +54,10 @@
         padding-left: 40px;
         padding-right: 40px;
     }
+
+    @include sd {
+        border-radius: 16px;
+    }
 }
 
 .hiden-menu__heading {

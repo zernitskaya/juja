@@ -7,6 +7,10 @@
     font-size: 20px;
 }
 
+.input-button:hover .input-button__ico {
+    transform: scale(1.2);
+}
+
 .input-button__ico {
     position: absolute;
     bottom: 10px;

@@ -23,7 +23,6 @@
     padding-bottom: 50px;
     background: #DBF5F1;
     box-shadow: 30px 60px 30px 15px rgba(0, 0, 0, 0.1);
-    border-radius: 50px;
 
     // &::before {
     //     content: "";
@@ -33,6 +32,10 @@
     //     background: #DBF5F1;
     //     filter: blur(20px);
     // }
+
+    @include sd {
+        border-radius: 16px;
+    }
 }
 
 .query__heading {

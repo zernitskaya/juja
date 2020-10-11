@@ -1,12 +1,30 @@
 .registration {
     margin-top: 294px;
     margin-bottom: 200px;
-    // text-align: left;
+
+    @include max {
+        margin-top: 100px;
+        margin-bottom: 100px;
+    }
+
+    @include exlg {
+        margin-top: 64px;
+        margin-bottom: 64px;
+    }
 }
 
 .registration__form {
-    width: 272px;
+    width: 292px;
     margin: 0 auto;
     text-align: left;
 }
 
+.registration__helper {
+    display: flex;
+    justify-content: flex-end;
+    padding-top: 200px;
+
+    @include md {
+        padding-top: 64px;
+    }
+}
