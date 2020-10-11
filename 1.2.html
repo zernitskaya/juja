@@ -95,10 +95,10 @@
             </form>
 
             <div class="page-form__helper">
-                <button class="helper" type="button">
-                <span class="helper__icon">
-                    <span class="icon-i-helper"></span>
-                </span>
+                <button class="helper js-open-query" type="button">
+                    <span class="helper__icon">
+                        <span class="icon-i-helper"></span>
+                    </span>
                 </button>
             </div>
         </div>
@@ -253,6 +253,42 @@
                     <img src="img/pictures/map.png" alt="" class="map__img">
                 </div>
                 <button class="button--black button--small button map__btn">ок</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="query js-query">
+        <div class="query__overlay js-query__overlay"></div>
+        <div class="container">
+            <div class="query__wrap">
+                <div class="query__close">
+                    <button class="close js-close-query" type="button"></button>
+                </div>
+
+                <div class="query__desc">
+                    <h2 class="query__heading">
+                        Задайте вопрос. Менеджер свяжется с вами очень быстро
+                    </h2>
+
+                    <div class="query__form">
+                        <p class="query__form-title">ваш вопрос</p>
+                        <textarea class="query__form-area" cols="30" rows="10"></textarea>
+                    </div>
+
+                    <div action="" class="query__form">
+                        <p class="query__form-title">почта</p>
+                        <textarea class="query__form-area query__form-mail" cols="30"
+                                  rows="10"></textarea>
+                    </div>
+
+                    <label class="query__label">
+                        <input type="checkbox" class="query__radio">
+                        <span class="query__ico"></span>
+                        <span class="query__text">Я ознакомлен с
+                            <b class="hiden-choice__text-color">политикой конфиденциальности</b>
+                         </span>
+                    </label>
+                </div>
             </div>
         </div>
     </section>
