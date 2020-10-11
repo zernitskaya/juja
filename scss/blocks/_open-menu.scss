@@ -3,6 +3,9 @@
     height: 33px;
 }
 
+.open-menu:hover .open-menu__border {
+    transform: scale(1.5);
+}
 .open-menu__border {
     display: block;
     width: 100%;
