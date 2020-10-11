@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 
 <head>
     <meta charset="UTF-8">
@@ -9,91 +9,62 @@
 </head>
 
 <body>
-
-    <header class="header-page">
-        <div class="container">
-            <div class="header-page__wrap">
+<header class="header-page">
+    <div class="container">
+        <div class="header-page__wrap">
+            <div class="header-page__wrap-title">
                 <div class="logo">
-                    <div class="logo__wrap">
-                        <div class="logo__picrures">
-                            <img src="/img/pictures/logowight.svg" alt="" class="logo__img">
-                        </div>
+                    <div class="logo__picrures">
+                        <img src="img/pictures/logowight.svg" alt="" class="logo__img">
                     </div>
                 </div>
-
-                <div class="header-page__heading">
-                    <h1 class="header-page__text--small">пароль
-                    </h1>
-                </div>
-            </div>
-    </header>
-
-    <section class="password">
-        <div class="container">
-            <h2 class="heading">
-                ВОССТАНОВИТЬ ПАРОЛЬ
-            </h2>
-
-            <div class="password__wrap">
-            <div class="password__input">
-                <div class="caption">Телефон *</div>
-                <input type="text" class="item-input" placeholder="+ 7">
             </div>
 
-            <div class="password__btn-wrap">
-                <button class="button--black button">войти</button>
-            </div>
-            <div class="password__btn-wrap">
-                <button class="button--light button">у меня есть промокод</button>
+            <div class="header-page__heading">
+                <h1 class="header-page__text--small">
+                    пароль
+                </h1>
             </div>
         </div>
+    </div>
+</header>
 
-        </div>
-    </section>
+<section class="page-form">
+    <div class="container">
+        <h2 class="heading">
+            ВОССТАНОВИТЬ ПАРОЛЬ
+        </h2>
 
-    <footer class="footer">
-        <div class="container">
-            <div class="footer__wrap">
-                <div class="footer__about">
-                    <a href="" class="footer__link-logo">
-                        <img src="img/pictures/logo.svg" alt="" class="footer__logo">
-                    </a>
+        <form class="page-form__form form">
+            <fieldset class="form__step">
+                <div class="form__input">
+                    <div class="caption form__caption">Телефон *</div>
+                    <input type="text" class="item-input" placeholder="+ 7">
+                </div>
+            </fieldset>
 
-                    <p class="footer__about-text">ЭТО ЛИЧНЫЙ АССИСТЕНТ БЬЮТИ-МАСТЕРА
-                        СЕРВИС ДЛЯ ЗАПИСИ НА
-                        БЬЮТИ-ПРОЦЕДУРЫ
-                        ОНЛАЙН
-                    </p>
+            <div class="form__btn">
+                <div class="form__btn-item">
+                    <button class="button--black button">войти</button>
                 </div>
 
-                <div class="footer__nav nav-left">
-                    <ul class="footer__nav-list">
-                        <li class="footer__list"><a href="" class="footer__link">о нас</a></li>
-                    </ul>
+                <div class="form__btn-item">
+                    <button class="button--light button">у меня есть промокод</button>
                 </div>
-
-                <div class="footer__nav nav-right">
-                    <ul class="footer__nav-list">
-                        <li class="footer__list"><a href="" class="footer__link">как завовевать сердечки
-                                клиентов?</a></li>
-                        <li class="footer__list"><a href="" class="footer__link">как найти мастера мечты?</a></li>
-                    </ul>
-                </div>
-
-                <div class="footer__star">
-                    <div class="footer__star-img">
-                        <div class="icon-i-star"></div>
-                    </div>
-
-                    <a href="#" class="footer__star-link">
-                        <span class="footer__star-span">РЕФЕРАЛЬНАЯ <br> ПРОГРАММА</span>
-                    </a>
-                </div>
-
             </div>
-        </div>
-    </footer>
+        </form>
 
+        <div class="page-form__helper">
+            <button class="helper" type="button">
+                <span class="helper__icon">
+                    <span class="icon-i-helper"></span>
+                </span>
+            </button>
+        </div>
+    </div>
+</section>
+
+<script src="js/main.js"></script>
 
 </body>
 
