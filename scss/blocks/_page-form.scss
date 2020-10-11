@@ -13,6 +13,20 @@
     }
 }
 
+.page-form .heading {
+    margin-bottom: 111px;
+
+    @include exlg {
+        margin-bottom: 64px;
+    }
+
+    @include lg {
+        font-size: 28px;
+        padding-right: 0;
+        text-align: center;
+    }
+}
+
 .page-form__form {
     width: 292px;
     margin: 0 auto;

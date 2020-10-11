@@ -6,7 +6,6 @@
     font-size: 48px;
     line-height: 100%;
     letter-spacing: 0.055em;
-    margin-bottom: 111px;
     padding-right: 72px;
 
     @include max {
@@ -15,13 +14,6 @@
 
     @include exlg {
         font-size: 32px;
-        margin-bottom: 64px;
-    }
-
-    @include lg {
-        font-size: 28px;
-        padding-right: 0;
-        text-align: center;
     }
 
     @include md {
