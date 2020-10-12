@@ -18,7 +18,7 @@
                     </a>
                 </div>
 
-                <button type="button" class="open-menu  js-open-menu">
+                <button type="button" class="open-menu" data-modal-open="menu">
                     <span class="open-menu__border"></span>
                     <span class="open-menu__border"></span>
                     <span class="open-menu__border"></span>
@@ -232,15 +232,15 @@
         </div>
     </footer>
 
-    <section class="hiden-menu js-hiden-menu">
-        <div class="hiden-menu__overlay js-hiden-menu__everlay"></div>
+    <section class="hiden-menu" data-modal-name="menu">
+        <div class="hiden-menu__overlay" data-modal-close="menu"></div>
 
         <div class="container">
             <div class="hiden-menu__wrap">
                 <div class="hiden-menu__menu-items">
                     <div class="hiden-menu__menu-item">
                         <div class="hiden-menu__close">
-                            <button class="close js-close" type="button"></button>
+                            <button class="close" type="button" data-modal-close="menu"></button>
                         </div>
 
                         <h2 class="hiden-menu__heading">МЕНЮ МАСТЕРА</h2>
