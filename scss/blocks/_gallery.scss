@@ -7,6 +7,11 @@
     padding: 0 15px;
     width: 25%;
     margin-bottom: 30px;
+    cursor: pointer;
+
+    &:active {
+        opacity: .7;
+    }
 
     @include md {
         width: 33.33%;
@@ -19,6 +24,16 @@
     }
 }
 
+.gallery__img-wrap {
+    position: relative;
+    padding-bottom: 100%;
+}
+
 .gallery__img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
     width: 100%;
+    object-fit: cover;
 }
