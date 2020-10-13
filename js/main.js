@@ -4,6 +4,7 @@
        const imgLightbox = document.querySelector('.js-lightbox__img');
        const lightbox = document.querySelector('.js-lightbox');
        const lightClose = document.querySelector('.js-lightbox-close');
+       const lightCloseBtn = document.querySelector('.js-lightbox-close-btn');
        const img = '.gallery__img';
        const itemClass = 'gallery__item';
        const buttonLeft = document.querySelector('.js-left');
@@ -32,7 +33,8 @@
            });
 
            newArrfunction(filterItem[0]);
-           if(!prev && !prev.length) {return}
+
+           if(!prev[0]) { return }
            imgLightbox.setAttribute('src', prev[0]);
        });
 
@@ -46,10 +48,15 @@
 
            newArrfunction(filterItem[0]);
 
+           if(!next[0]) { return }
            imgLightbox.setAttribute('src', next[0]);
        });
 
        lightClose.addEventListener('click', function() {
+           lightbox.classList.remove('active');
+       });
+
+       lightCloseBtn.addEventListener('click', function() {
            lightbox.classList.remove('active');
        });
 
