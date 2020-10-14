@@ -71,11 +71,47 @@
         </form>
 
         <div class="page-form__helper">
-            <button class="helper" type="button">
+            <button class="helper" type="button" data-modal-open="query">
                 <span class="helper__icon">
                     <span class="icon-i-helper"></span>
                 </span>
             </button>
+        </div>
+    </div>
+</section>
+
+<section class="query" data-modal-name="query">
+    <div class="query__overlay" data-modal-close="query"></div>
+    <div class="container">
+        <div class="query__wrap">
+            <div class="query__close">
+                <button class="close" type="button" data-modal-close="query"></button>
+            </div>
+
+            <div class="query__desc">
+                <h2 class="query__heading">
+                    Задайте вопрос. Менеджер свяжется с вами очень быстро
+                </h2>
+
+                <div class="query__form">
+                    <p class="query__form-title">ваш вопрос</p>
+                    <textarea class="query__form-area" cols="30" rows="10"></textarea>
+                </div>
+
+                <div action="" class="query__form">
+                    <p class="query__form-title">почта</p>
+                    <textarea class="query__form-area query__form-mail" cols="30"
+                              rows="10"></textarea>
+                </div>
+
+                <label class="query__label">
+                    <input type="checkbox" class="query__radio">
+                    <span class="query__ico"></span>
+                    <span class="query__text">Я ознакомлен с
+                            <b class="hiden-choice__text-color">политикой конфиденциальности</b>
+                         </span>
+                </label>
+            </div>
         </div>
     </div>
 </section>

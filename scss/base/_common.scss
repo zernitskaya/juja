@@ -10,13 +10,13 @@ body.fixed {
 }
 
 .container {
-    max-width: 1503px;
+    max-width: 1530px;
+    padding: 0 15px;
     width: 100%;
     margin: 0 auto;
 
     @include max {
         max-width: 1366px;
-        padding: 0 15px;
     }
 
     @include exlg {

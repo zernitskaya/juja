@@ -1,6 +1,7 @@
 (function() {
    function lightBox(gallery) {
        const imgWrap = document.querySelector(gallery);
+       if(!imgWrap) return;
        const imgLightbox = document.querySelector('.js-lightbox__img');
        const lightbox = document.querySelector('.js-lightbox');
        const lightClose = document.querySelector('.js-lightbox-close');
@@ -119,13 +120,15 @@
     const menu = document.querySelector('.js-acordion-wrap');
     const itemClass = 'acordion__title';
 
-    menu.addEventListener('click', function(e) {
-        const el = isClosest(e.target, itemClass);
+    if (menu) {
+        menu.addEventListener('click', function(e) {
+            const el = isClosest(e.target, itemClass);
 
-        if(el && el.classList.contains(itemClass)) {
-            el.parentElement.classList.toggle('active');
-        }
-    });
+            if(el && el.classList.contains(itemClass)) {
+                el.parentElement.classList.toggle('active');
+            }
+        });
+    }
 })();
 
 (function() {
