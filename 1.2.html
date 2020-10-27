@@ -35,7 +35,6 @@
             </h2>
 
             <form class="page-form__form form">
-<!--                .page-form__form-wrap-->
                 <fieldset class="form__step">
                     <legend class="form__form-title">1. Информация о мастере *</legend>
 
@@ -44,7 +43,7 @@
                     </div>
 
                     <div class="form__input">
-                        <button class="caption  form__caption  js-open-select" type="button">
+                        <button class="caption  form__caption" type="button" data-modal-open="skills">
                             Услуга *
                             <small class="caption__prompt-text"> (выберите из списка)</small>
                             <span class="caption__arrow"><span class="icon-i-arrow"></span></span>
@@ -67,7 +66,7 @@
                             <small class="caption__prompt-text">(видят только клиенты)</small>
                         </div>
 
-                        <button class="input-button js-open-map" type="button">
+                        <button class="input-button" type="button" data-modal-open="map">
                             <span class="input-button__ico">
                                 <span class="icon-i-nav"></span>
                             </span>
@@ -95,7 +94,7 @@
             </form>
 
             <div class="page-form__helper">
-                <button class="helper js-open-query" type="button">
+                <button class="helper" type="button" data-modal-open="query">
                     <span class="helper__icon">
                         <span class="icon-i-helper"></span>
                     </span>
@@ -104,13 +103,13 @@
         </div>
     </section>
 
-    <section class="hiden-choice  js-hiden-choice">
-        <div class="hiden-choice__overlay"></div>
+    <section class="hiden-choice" data-modal-name="skills">
+        <div class="hiden-choice__overlay" data-modal-close="skills"></div>
 
         <div class="container">
             <div class="hiden-choice__heading-wrap">
                 <div class="hiden-choice__close">
-                    <button class="close js-close-select" type="button"></button>
+                    <button class="close" type="button" data-modal-close="skills"></button>
                 </div>
 
                 <h2 class="hiden-choice__heading">
@@ -192,7 +191,7 @@
                 </form>
 
                 <div class="hiden-choice__wrap-button">
-                    <button class="hiden-choice__button  js-open-add-skill">
+                    <button class="hiden-choice__button" data-modal-open="added">
                         <span class="hiden-choice__circle">
                             <span class="icon-i-circle"></span>
                         </span>
@@ -203,12 +202,12 @@
         </div>
     </section>
 
-    <section class="added  js-added">
-        <div class="added__overlay js-added__overlay"></div>
+    <section class="added" data-modal-name="added">
+        <div class="added__overlay" data-modal-close="added"></div>
         <div class="container">
             <div class="added__heading-wrap">
                 <div class="added__close">
-                    <button class="close js-close-added" type="button"></button>
+                    <button class="close" type="button" data-modal-close="added"></button>
                 </div>
 
                 <h2 class="added__heading">
@@ -236,13 +235,13 @@
         </div>
     </section>
 
-    <section class="map js-map">
-        <div class="map__overlay  js-map__overlay"></div>
+    <section class="map" data-modal-name="map">
+        <div class="map__overlay" data-modal-close="map"></div>
 
         <div class="container">
             <div class="map__wrap">
                 <div class="map__close">
-                    <button class="close js-close-map" type="button"></button>
+                    <button class="close" type="button" data-modal-close="map"></button>
                 </div>
 
                 <div class="map__input-wrap">
@@ -257,12 +256,12 @@
         </div>
     </section>
 
-    <section class="query js-query">
-        <div class="query__overlay js-query__overlay"></div>
+    <section class="query" data-modal-name="query">
+        <div class="query__overlay" data-modal-close="query"></div>
         <div class="container">
             <div class="query__wrap">
                 <div class="query__close">
-                    <button class="close js-close-query" type="button"></button>
+                    <button class="close" type="button" data-modal-close="query"></button>
                 </div>
 
                 <div class="query__desc">

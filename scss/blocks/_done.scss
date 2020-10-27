@@ -38,6 +38,10 @@
     padding-left: 67px;
     padding-right: 67px;
     padding-bottom: 50px;
+
+    @include md {
+        width: 100%;
+    }
 }
 
 .done__heading {
@@ -48,6 +52,16 @@
     padding-top: 78px;
     margin-bottom: 70px;
     margin-left: 260px;
+
+    @include lg {
+        font-size: 36px;
+    }
+    
+    @include md {
+        width: 100%;
+        margin: 0;
+        text-align: center;
+    }
 }
 
 .done__text {
