@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3.3</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header class="header-page">
+        <div class="container">
+            <div class="header-page__wrap">
+                <div class="header-page__wrap-title">
+                    <div class="logo">
+                        <div class="logo__picrures">
+                            <img src="img/pictures/logowight.svg" alt="" class="logo__img">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="header-page__heading">
+                    <h1 class="header-page__text--small">
+                        профиль клиента
+                    </h1>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="profile-client">
+        <div class="container">
+            <div class="profile-client__wrap">
+                <div class="profile-client__title">
+                    <h2 class="heading  heading--clear">
+                        ФИО
+                    </h2>
+                </div>
+
+                <div class="profile-client__desc">
+                    <div class="profile-client__ban">
+                        <div class="avatar">
+                            <div class="avatar__photo-wrap">
+                                <img src="img/pictures/mainphoto.png" alt="" class="avatar__img">
+                            </div>
+
+                            <div class="avatar__photo-download">
+                                <div class="download">
+                                    <input type="file" class="download__input">
+
+                                    <div class="icon-i-download"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <form class="profile-client__form">
+                        <fieldset class="profile-client__fieldset">
+                            <legend class="profile-client__form-title">ОСНОВНАЯ ИНФОРМАЦИЯ</legend>
+
+                            <div class="profile-client__form-item">
+                                <div class="caption profile-client__caption">телефон</div>
+                                <input class="item-input" placeholder="+ 7" type="text">
+                            </div>
+
+                            <div class="profile-client__form-item">
+                                <div class="caption profile-client__caption">e-mail</div>
+                                <input class="item-input" placeholder="wwwww@sssss.com" type="text">
+                            </div>
+                        </fieldset>
+
+                        <fieldset class="profile-client__fieldset">
+                            <legend class="profile-client__form-title">
+                                ПОКАЗАНИЯ / ПРОТИВОПОКАЗАНИЯ
+
+                                <span class="profile-client__form-sub">Введите дополнительную информацию о клиенте (видите только вы)</span>
+                            </legend>
+
+                            <div class="profile-client__form-item">
+                                <div class="caption profile-client__caption">что сделать</div>
+                                <input class="item-input" type="text" placeholder="...">
+
+                                <div class="profile-client__input-helper">
+                                    снизить кислотность состава (раздражение);
+                                    купить люголь
+                                </div>
+                            </div>
+
+                            <div class="profile-client__form-item">
+                                <div class="caption profile-client__caption">не стоит делать</div>
+                                <input class="item-input" type="text" placeholder="...">
+
+                                <div class="profile-client__input-helper">
+                                    аллергия на спирт
+                                </div>
+                            </div>
+                        </fieldset>
+
+                        <fieldset class="profile-client__btn">
+                            <button class="button button--black">
+                                сохранить
+                            </button>
+                        </fieldset>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="profile-client-calender">
+        <div class="container">
+            <div class="profile-client-calender__wrap">
+                <div class="profile-client-calender__title">
+                    <h2 class="heading  heading--clear">
+                        ЗАПИСАТЬ НА ПРИЕМ
+                    </h2>
+
+                    <div class="profile-client-calender__start">
+                        <div class="profile-client-calender__start-btn">
+                            <div class="profile-client-calender__icon-start">
+                                <div class="icon-i-play"></div>
+                            </div>
+
+                            <div class="profile-client-calender__start-text">
+                                НАЧАТЬ ПРОЦЕДУРУ ПРЯМО СЕЙЧАС
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="profile-client-calender__calendar">
+                    <div class="calendar">
+                        <div class="calendar__day">
+                            <div class="calendar__days-status">
+                                <span class="calendar__status-day-low">работаем /</span>
+                                <span class="calendar__status-day-bol">выходной</span>
+                            </div>
+
+                            <div class="calendar__day-date">
+                                <div class="calendar__day-btn">
+                                    <div class="icon-i-arrow-left"></div>
+                                </div>
+
+                                <div class="calendar__day-numb">
+                                    <div class="calendar__day-number">2</div>
+                                    <div class="calendar__day-text">ПОНЕДЕЛЬНИК</div>
+                                </div>
+                            </div>
+
+                            <div class="calendar__day-event">
+                                <ul class="calendar__event">
+                                    <li class="calendar__event-item">
+                                        <div class="calendar__event-time">15:30</div>
+                                        <div class="calendar__event-text">вероника - маникюр</div>
+                                    </li>
+
+                                    <li class="calendar__event-item">
+                                        <div class="calendar__event-time">15:30</div>
+                                        <div class="calendar__event-text">вероника - маникюр</div>
+                                    </li>
+
+                                    <li class="calendar__event-item">
+                                        <div class="calendar__event-time">15:30</div>
+                                        <div class="calendar__event-text">вероника - маникюр</div>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div class="calendar__add-wrap">
+                                <div class="calendar__add">
+                                    <div class="icon-i-add"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="calendar__days">
+                            <div class="calendar__select-month">
+                                <div class="calendar__select-month-arrow"><div class="icon-i-left"></div></div>
+                                <div class="calendar__select-month-text">сентябрь</div>
+                                <div class="calendar__select-month-arrow"><div class="icon-i-right"></div></div>
+                            </div>
+
+                            <div class="calendar__select-days">
+                                <div class="calendar__select-week">
+                                    <div class="calendar__select-week-item">пн</div>
+                                    <div class="calendar__select-week-item">вт</div>
+                                    <div class="calendar__select-week-item">ср</div><span class="calendar__select-number-text">
+                                </span>                                    <div class="calendar__select-week-item">чт</div>
+                                    <div class="calendar__select-week-item">пт</div>
+                                    <div class="calendar__select-week-item">сб</div>
+                                    <div class="calendar__select-week-item">вс</div>
+                                </div>
+
+                                <div class="calendar__select-number">                   
+                                    <div class="calendar__select-number-item"  data-modal-open="calendar"><span class="calendar__select-number-text">1</span></div> 
+                                    <div class="calendar__select-number-item"  data-modal-open="calendar"><span class="calendar__select-number-text">2</span></div>
+                                    <div class="calendar__select-number-item active" data-modal-open="calendar"><span class="calendar__select-number-text">3</span></div>
+                                    <div class="calendar__select-number-item"  data-modal-open="calendar"><span class="calendar__select-number-text">4</span></div>
+                                    <div class="calendar__select-number-item"  data-modal-open="calendar"><span class="calendar__select-number-text">5</span></div>
+                                    <div class="calendar__select-number-item"  data-modal-open="calendar"><span class="calendar__select-number-text">6</span></div>
+                                    <div class="calendar__select-number-item"  data-modal-open="calendar"><span class="calendar__select-number-text">7</span></div>
+                                </div>
+
+                                <div class="calendar__select-number">
+                                    <div class="calendar__select-number-item"  data-modal-open="calendar"><span class="calendar__select-number-text">1</span></div>
+                                    <div class="calendar__select-number-item"  data-modal-open="calendar"><span class="calendar__select-number-text">2</span></div>
+                                    <div class="calendar__select-number-item"  data-modal-open="calendar"><span class="calendar__select-number-text">3</span></div>
+                                    <div class="calendar__select-number-item"  data-modal-open="calendar"><span class="calendar__select-number-text">4</span></div>
+                                    <div class="calendar__select-number-item"  data-modal-open="calendar"><span class="calendar__select-number-text">5</span></div>
+                                    <div class="calendar__select-number-item"  data-modal-open="calendar"><span class="calendar__select-number-text">6</span></div>
+                                    <div class="calendar__select-number-item"  data-modal-open="calendar"><span class="calendar__select-number-text">7</span></div>
+                                </div>
+
+                                <div class="calendar__select-number">
+                                    <div class="calendar__select-number-item"  data-modal-open="calendar"><span class="calendar__select-number-text">1</span></div>
+                                    <div class="calendar__select-number-item"  data-modal-open="calendar"><span class="calendar__select-number-text">2</span></div>
+                                    <div class="calendar__select-number-item"  data-modal-open="calendar"><span class="calendar__select-number-text">3</span></div>
+                                    <div class="calendar__select-number-item"  data-modal-open="calendar"><span class="calendar__select-number-text">4</span></div>
+                                    <div class="calendar__select-number-item"  data-modal-open="calendar"><span class="calendar__select-number-text">5</span></div>
+                                    <div class="calendar__select-number-item"  data-modal-open="calendar"><span class="calendar__select-number-text">6</span></div>
+                                    <div class="calendar__select-number-item"  data-modal-open="calendar"><span class="calendar__select-number-text">7</span></div>
+                                </div>
+
+                                <div class="calendar__select-number">
+                                    <div class="calendar__select-number-item"  data-modal-open="calendar"><span class="calendar__select-number-text">1</span></div>
+                                    <div class="calendar__select-number-item"  data-modal-open="calendar"><span class="calendar__select-number-text">2</span></div>
+                                    <div class="calendar__select-number-item"  data-modal-open="calendar"><span class="calendar__select-number-text">3</span></div>
+                                    <div class="calendar__select-number-item"  data-modal-open="calendar"><span class="calendar__select-number-text">4</span></div>
+                                    <div class="calendar__select-number-item"  data-modal-open="calendar"><span class="calendar__select-number-text">5</span></div>
+                                    <div class="calendar__select-number-item"  data-modal-open="calendar"><span class="calendar__select-number-text">6</span></div>
+                                    <div class="calendar__select-number-item"  data-modal-open="calendar"><span class="calendar__select-number-text">7</span></div>
+                                </div>
+
+                                <div class="calendar__select-number">
+                                    <div class="calendar__select-number-item"  data-modal-open="calendar"><span class="calendar__select-number-text">1</span></div>
+                                    <div class="calendar__select-number-item"  data-modal-open="calendar"><span class="calendar__select-number-text">2</span></div>
+                                    <div class="calendar__select-number-item"  data-modal-open="calendar"><span class="calendar__select-number-text">3</span></div>
+                                    <div class="calendar__select-number-item"  data-modal-open="calendar"><span class="calendar__select-number-text">4</span></div>
+                                    <div class="calendar__select-number-item"  data-modal-open="calendar"><span class="calendar__select-number-text">5</span></div>
+                                    <div class="calendar__select-number-item"  data-modal-open="calendar"><span class="calendar__select-number-text">6</span></div>
+                                    <div class="calendar__select-number-item"  data-modal-open="calendar"><span class="calendar__select-number-text">7</span></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="calendar__service-wrap" data-modal-name="calendar">
+                            <div class="calendar__service-overlay" data-modal-close="calendar"></div>
+
+                            <div class="calendar__time-event">
+                                <div class="calendar__time-event-wrap">
+                                    <div class="calendar__time-event-name">вероника - маникюр</div>
+
+                                    <div class="calendar__service">
+                                        <div class="select2">
+                                            <select class="select2__input">
+                                                <option>маникюр</option>
+                                                <option>маникюр</option>
+                                                <option>маникюр</option>
+                                            </select>
+
+                                            <div class="select2__input-icon"></div>
+                                        </div>
+                                    </div>
+
+                                    <div class="calendar__service-time-info">
+                                        <div class="calendar__service-time">
+                                            <div class="select2">
+                                                <select class="select2__input">
+                                                    <option>6:30</option>
+                                                    <option>6:30</option>
+                                                    <option>6:30</option>
+                                                </select>
+
+                                                <div class="select2__input-icon"></div>
+                                            </div>
+                                        </div>
+
+                                        <div class="calendar__service-date">
+                                            <div class="select2">
+                                                <select class="select2__input">
+                                                    <option>02/09</option>
+                                                    <option>02/09</option>
+                                                    <option>02/09</option>
+                                                </select>
+
+                                                <div class="select2__input-icon"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="calendar__service-btn">
+                                        <button class="button--black button button--small">ok</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="other-info">
+        <div class="container">
+            <div class="other-info__wrap">
+                <div class="other-info__title">
+                    <h2 class="heading  heading--clear">
+                        ДОПОЛНИТЕЛЬНАЯ ИНФОРМАЦИЯ О КЛИЕНТЕ
+                    </h2>
+                </div>
+
+                <ul class="other-info__props">
+                    <li class="other-info__props-item">
+                        <div class="other-info__prop">ВОЗРАСТ</div>
+                        <div class="other-info__val">24</div>
+                    </li>
+
+                    <li class="other-info__props-item">
+                        <div class="other-info__prop">КОЖА ГОЛОВЫ</div>
+                        <div class="other-info__val">...</div>
+                    </li>
+
+                    <li class="other-info__props-item">
+                        <div class="other-info__prop">ТИП КОЖИ</div>
+                        <div class="other-info__val">КОМБИНИРОВАННАЯ</div>
+                    </li>
+
+                    <li class="other-info__props-item">
+                        <div class="other-info__prop">ТИП КОЖИ</div>
+                        <div class="other-info__val">...</div>
+                    </li>
+
+                    <li class="other-info__props-item">
+                        <div class="other-info__prop">ТИП ВОЛОС</div>
+                        <div class="other-info__val">ПОВРЕЖДЕННЫЕ</div>
+                    </li>
+
+                    <li class="other-info__props-item">
+                        <div class="other-info__prop">СОСТОЯНИЕ ДУШИ</div>
+                        <div class="other-info__val">...</div>
+                    </li>
+
+                    <li class="other-info__props-item">
+                        <div class="other-info__prop">ДЛИНА ВОЛОС</div>
+                        <div class="other-info__val">КАРЕ</div>
+                    </li>
+
+                    <li class="other-info__props-item">
+                        <div class="other-info__prop">ДЛИНА ВОЛОС</div>
+                        <div class="other-info__val">...</div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section class="acordion js-acordion-wrap">
+        <div class="container">
+            <div class="acordion__item js-accordion-item">
+                <div class="acordion__title">
+                    <div class="acordion__text  heading  heading--clear">ИСТОРИЯ ПРОЦЕДУР</div>
+                    <div class="acordion__icon">
+                        <div class="icon-i-arrow"></div>
+                    </div>
+                </div>
+
+                <div class="acordion__desc">
+                    <div class="history-table">
+                        <div class="history-table__overflow">
+                            <div class="history-table__table">
+                                <div class="history-table__row">
+                                    <div class="history-table__col">ДАТА</div>
+                                    <div class="history-table__col">ПРОЦЕДУРА</div>
+                                    <div class="history-table__col">ПРИХОД</div>
+                                    <div class="history-table__col">РАСХОД</div>
+                                    <div class="history-table__col">ТАЙМИНГ</div>
+                                    <div class="history-table__col">ИТОГ</div>
+                                </div>
+
+                                <div class="history-table__row">
+                                    <div class="history-table__col">16/09</div>
+                                    <div class="history-table__col"></div>
+                                    <div class="history-table__col"></div>
+                                    <div class="history-table__col"></div>
+                                    <div class="history-table__col"></div>
+                                    <div class="history-table__col"></div>
+                                </div>
+
+                                <div class="history-table__row">
+                                    <div class="history-table__col">16/09</div>
+                                    <div class="history-table__col"></div>
+                                    <div class="history-table__col"></div>
+                                    <div class="history-table__col"></div>
+                                    <div class="history-table__col"></div>
+                                    <div class="history-table__col"></div>
+                                </div>
+
+                                <div class="history-table__row">
+                                    <div class="history-table__col">16/09</div>
+                                    <div class="history-table__col"></div>
+                                    <div class="history-table__col"></div>
+                                    <div class="history-table__col"></div>
+                                    <div class="history-table__col"></div>
+                                    <div class="history-table__col"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="history-table__download">
+                            <a class="history-table__load"  href="#">выгрузить в Exel</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__wrap">
+                <div class="footer__about">
+                    <a href="" class="footer__link-logo">
+                        <img src="img/pictures/logo.svg" alt="" class="footer__logo">
+                    </a>
+
+                    <p class="footer__about-text">ЭТО ЛИЧНЫЙ АССИСТЕНТ БЬЮТИ-МАСТЕРА
+                        СЕРВИС ДЛЯ ЗАПИСИ НА
+                        БЬЮТИ-ПРОЦЕДУРЫ
+                        ОНЛАЙН
+                    </p>
+                </div>
+
+                <div class="footer__nav">
+                    <ul class="footer__nav-list">
+                        <li class="footer__list"><a href="" class="footer__link">о нас</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer__nav">
+                    <ul class="footer__nav-list">
+                        <li class="footer__list"><a href="" class="footer__link">как завовевать сердечки
+                            клиентов?</a></li>
+                        <li class="footer__list"><a href="" class="footer__link">как найти мастера мечты?</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer__star">
+                    <div class="footer__star-img">
+                        <div class="icon-i-star"></div>
+                    </div>
+
+                    <a href="#" class="footer__star-link">
+                        <span class="footer__star-span">РЕФЕРАЛЬНАЯ <br> ПРОГРАММА</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>

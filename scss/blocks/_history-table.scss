@@ -1,0 +1,53 @@
+.history-table__table {
+    min-width: 800px;
+}
+
+.history-table__download {
+    display: flex;
+    justify-content: flex-end;
+    padding-top: 24px;
+    font-weight: 600;
+    font-size: 20px;
+    letter-spacing: 0.055em;
+}
+
+.history-table__row {
+    display: flex;
+    height: 84px;
+    font-size: 20px;
+    border-bottom: 1px solid;
+    font-weight: 600;
+
+    @include lg {
+        font-size: 16px;
+    }
+}
+
+.history-table__row:nth-child(1) {
+    border-bottom: none;
+    font-weight: 300;
+}
+
+.history-table__col {
+    display: flex;
+    align-items: center;
+    flex: 1;
+    width: 150px;
+    padding: 16px;
+}
+
+.history-table__col:nth-child(even) {
+    background: rgba(166, 230, 219, 0.4);
+}
+
+.history-table__col:nth-child(1) {
+    width: 140px;
+}
+
+.history-table__col:nth-child(2) {
+    flex: 2.5;
+}
+
+.history-table__overflow {
+    overflow: auto;
+}

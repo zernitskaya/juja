@@ -1,0 +1,66 @@
+.profile-client-calender {
+    padding: 60px 0;
+}
+
+.profile-client-calender__title {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 16px;
+    padding-left: 100px;
+
+    @include lg {
+        padding-left: 0;
+        margin-bottom: 32px;
+    }
+
+    @include sd {
+        display: block;
+    }
+}
+
+.profile-client-calender__start-btn {
+    display: flex;
+    cursor: pointer;
+
+    &:active {
+        opacity: .8;
+    }
+
+    @include lg {
+        align-items: center;
+    }
+
+    @include sd {
+        padding-top: 16px;
+    }
+}
+
+.profile-client-calender__icon-start {
+    width: 100px;
+    height: 100px;
+    margin-right: 34px;
+
+    @include lg {
+        width: 46px;
+        height: 46px;
+    }
+
+    @include sd {
+        margin-right: 16px;
+    }
+}
+
+.profile-client-calender__start-text {
+    width: 220px;
+    font-size: 50px;
+    letter-spacing: 0.055em;
+    word-break: break-word;
+
+    @include max {
+        font-size: 32px;
+    }
+
+    @include lg {
+        font-size: 16px;
+    }
+}

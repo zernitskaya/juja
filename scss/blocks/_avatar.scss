@@ -1,0 +1,23 @@
+.avatar__photo-wrap {
+    position: relative;
+    padding-bottom: 136%;
+
+    @include md {
+        padding-bottom: 100%;
+    }
+}
+
+.avatar__img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.avatar__photo-download {
+    display: flex;
+    justify-content: flex-end;
+    padding-top: 10px;
+}
