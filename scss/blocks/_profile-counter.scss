@@ -1,0 +1,146 @@
+.profile-counter {
+    padding-bottom: 160px;
+
+    @include exlg {
+        padding-bottom: 60px;
+    }
+}
+
+.profile-counter__item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile-counter__left {
+    position: relative;
+    border: 10px solid;
+    border-radius: 50%;
+    margin-right: 40px;
+
+    &:after,
+    &:before {
+        content: '';
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        width: 10px;
+        height: 60%;
+        margin: auto;
+        background-color: currentColor;
+
+        @include exlg {
+            width: 6px;
+        }
+    }
+
+    &:after {
+        left: 25px;
+
+        @include exlg {
+            left: 15px;
+        }
+    }
+
+    &:before {
+        right: 25px;
+
+        @include exlg {
+            right: 15px;
+        }
+    }
+
+    @include exlg {
+        border: 6px solid;
+        margin-right: 24px;
+    }
+}
+
+.profile-counter__play {
+    position: relative;
+    border: 10px solid;
+    border-radius: 50%;
+    width: 250px;
+    height: 250px;
+    margin-right: 40px;
+
+    &:before {
+        content: '';
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 70px;
+        right: 0;
+        width: 0;
+        height: 0;
+        margin: auto;
+        border: 50px solid transparent;
+        border-top-color: currentColor;
+        border-top-width: 100px;
+        transform: rotate(-90deg);
+
+        @include exlg {
+            left: 28px;
+            border: 20px solid transparent;
+            border-top-color: currentColor;
+            border-top-width: 40px;
+        }
+    }
+
+    @include exlg {
+        width: 100px;
+        height: 100px;
+        border: 6px solid;
+        margin-right: 24px;
+    }
+}
+
+.profile-counter__right {
+    position: relative;
+    border: 10px solid;
+    border-radius: 50%;
+
+    &:before {
+        content: '';
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        width: 30px;
+        height: 30px;
+        margin: auto;
+        background-color: currentColor;
+
+        @include exlg {
+            width: 20px;
+            height: 20px;
+        }
+    }
+
+    @include exlg {
+        border: 6px solid;
+    }
+}
+
+.profile-counter__left,
+.profile-counter__right {
+    width: 100px;
+    height: 100px;
+
+    &.disabled {
+        filter: blur(5px);
+    }
+
+    @include exlg {
+        width: 60px;
+        height: 60px;
+    }
+}
+
+.profile-counter__number {
+    padding-top: 20px;
+    font-size: 50px;
+    letter-spacing: 0.055em;
+    text-align: center;
+}

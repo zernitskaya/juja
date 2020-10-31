@@ -14,6 +14,12 @@
     text-align: center;
 }
 
+.profile-client__proc-btn {
+    display: flex;
+    justify-content: center;
+    padding-top: 16px;
+}
+
 .profile-client__desc {
     display: flex;
 
@@ -70,7 +76,8 @@
     letter-spacing: 0.055em;
 }
 
-.profile-client__form-item .item-input {
+.profile-client__form-item .item-input,
+.profile-client__form-item .textarea-item {
     margin-left: 20px;
 }
 
@@ -91,5 +98,12 @@
     padding-top: 16px;
     font-weight: 600;
     font-size: 20px;
+    letter-spacing: 0.055em;
+}
+
+.profile-client__btn-text {
+    font-size: 20px;
+    padding-top: 20px;
+    font-weight: 600;
     letter-spacing: 0.055em;
 }

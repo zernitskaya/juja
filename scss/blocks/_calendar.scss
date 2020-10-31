@@ -326,7 +326,8 @@
     justify-content: flex-end;
     padding: 60px;
     padding-right: 0;
-    width: 610px;
+    width: 100%;
+    max-width: 610px;
     margin: auto;
     background-color: #fff;
     box-shadow: 30px 60px 30px 15px rgba(0, 0, 0, 0.1);
@@ -334,6 +335,10 @@
     background-image: linear-gradient(#dbf5f1, #dbf5f1);
     background-size: 159px 100%;
     background-repeat: no-repeat;
+
+    @include sd {
+        border-radius: 16px;
+    }
 }
 
 .calendar__time-event-wrap {
@@ -360,6 +365,11 @@
 .calendar__service-time-info {
     display: flex;
     margin-bottom: 44px;
+
+    @include sd {
+        justify-content: center;
+        margin-bottom: 32px;
+    }
 }
 
 .calendar__service-time {
@@ -381,6 +391,7 @@
     overflow: auto;
     width: 100%;
     height: 100%;
+    padding: 0 8px;
 }
 
 .calendar__service-wrap.active {
@@ -393,4 +404,14 @@
     height: 100%;
     left: 0;
     top: 0;
+
+    @include sd {
+        background-color: rgba(196, 196, 196, 0.4);
+    }
+}
+
+.calendar__close {
+    position: absolute;
+    right: 26px;
+    top: 21px;
 }

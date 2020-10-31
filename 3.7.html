@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>3.3</title>
+    <title>3.7</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -108,6 +108,52 @@
         </div>
     </section>
 
+    <section class="profile-counter">
+        <div class="container">
+            <div class="profile-counter__wrap">
+                <div class="profile-counter__item">
+                    <button class="profile-counter__left disabled" type="button"></button>
+
+                    <button class="profile-counter__play" type="button"></button>
+
+                    <button class="profile-counter__right disabled" type="button"></button>
+                </div>
+
+                <div class="profile-counter__number">
+                    00:00
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="profile-money">
+        <div class="container">
+            <div class="profile-money__wrap">
+                <div class="profile-money__title">
+                    <h2 class="heading  heading--clear">
+                        ЗАПИСАТЬ НА ПРИЕМ
+                    </h2>
+                </div>
+
+                <form class="profile-money__form">
+                    <fieldset class="profile-money__form-wrap">
+                        <div class="profile-money__form-item">
+                            <input class="input-item2" type="text" placeholder="приход">
+                        </div>
+
+                        <div class="profile-money__form-item">
+                            <input class="input-item2" type="text" placeholder="расход">
+                        </div>
+
+                        <div class="profile-money__form-item">
+                            <textarea class="input-item2 input-item2--area" cols="30" rows="10" placeholder="комментарий"></textarea>
+                        </div>
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+    </section>
+
     <section class="profile-client-calender">
         <div class="container">
             <div class="profile-client-calender__wrap">
@@ -115,18 +161,6 @@
                     <h2 class="heading  heading--clear">
                         ЗАПИСАТЬ НА ПРИЕМ
                     </h2>
-
-                    <div class="profile-client-calender__start">
-                        <div class="process-start">
-                            <div class="process-start__icon-start">
-                                <div class="icon-i-play"></div>
-                            </div>
-
-                            <div class="process-start__start-text">
-                                НАЧАТЬ ПРОЦЕДУРУ ПРЯМО СЕЙЧАС
-                            </div>
-                        </div>
-                    </div>
                 </div>
 
                 <div class="profile-client-calender__calendar">
@@ -192,8 +226,8 @@
                                     <div class="calendar__select-week-item">вс</div>
                                 </div>
 
-                                <div class="calendar__select-number">                   
-                                    <div class="calendar__select-number-item"  data-modal-open="calendar"><span class="calendar__select-number-text">1</span></div> 
+                                <div class="calendar__select-number">
+                                    <div class="calendar__select-number-item"  data-modal-open="calendar"><span class="calendar__select-number-text">1</span></div>
                                     <div class="calendar__select-number-item"  data-modal-open="calendar"><span class="calendar__select-number-text">2</span></div>
                                     <div class="calendar__select-number-item active" data-modal-open="calendar"><span class="calendar__select-number-text">3</span></div>
                                     <div class="calendar__select-number-item"  data-modal-open="calendar"><span class="calendar__select-number-text">4</span></div>
@@ -298,121 +332,6 @@
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="other-info">
-        <div class="container">
-            <div class="other-info__wrap">
-                <div class="other-info__title">
-                    <h2 class="heading  heading--clear">
-                        ДОПОЛНИТЕЛЬНАЯ ИНФОРМАЦИЯ О КЛИЕНТЕ
-                    </h2>
-                </div>
-
-                <ul class="other-info__props">
-                    <li class="other-info__props-item">
-                        <div class="other-info__prop">ВОЗРАСТ</div>
-                        <div class="other-info__val">24</div>
-                    </li>
-
-                    <li class="other-info__props-item">
-                        <div class="other-info__prop">КОЖА ГОЛОВЫ</div>
-                        <div class="other-info__val">...</div>
-                    </li>
-
-                    <li class="other-info__props-item">
-                        <div class="other-info__prop">ТИП КОЖИ</div>
-                        <div class="other-info__val">КОМБИНИРОВАННАЯ</div>
-                    </li>
-
-                    <li class="other-info__props-item">
-                        <div class="other-info__prop">ТИП КОЖИ</div>
-                        <div class="other-info__val">...</div>
-                    </li>
-
-                    <li class="other-info__props-item">
-                        <div class="other-info__prop">ТИП ВОЛОС</div>
-                        <div class="other-info__val">ПОВРЕЖДЕННЫЕ</div>
-                    </li>
-
-                    <li class="other-info__props-item">
-                        <div class="other-info__prop">СОСТОЯНИЕ ДУШИ</div>
-                        <div class="other-info__val">...</div>
-                    </li>
-
-                    <li class="other-info__props-item">
-                        <div class="other-info__prop">ДЛИНА ВОЛОС</div>
-                        <div class="other-info__val">КАРЕ</div>
-                    </li>
-
-                    <li class="other-info__props-item">
-                        <div class="other-info__prop">ДЛИНА ВОЛОС</div>
-                        <div class="other-info__val">...</div>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </section>
-
-    <section class="acordion js-acordion-wrap">
-        <div class="container">
-            <div class="acordion__item js-accordion-item">
-                <div class="acordion__title">
-                    <div class="acordion__text  heading  heading--clear">ИСТОРИЯ ПРОЦЕДУР</div>
-                    <div class="acordion__icon">
-                        <div class="icon-i-arrow"></div>
-                    </div>
-                </div>
-
-                <div class="acordion__desc">
-                    <div class="history-table">
-                        <div class="history-table__overflow">
-                            <div class="history-table__table">
-                                <div class="history-table__row">
-                                    <div class="history-table__col">ДАТА</div>
-                                    <div class="history-table__col">ПРОЦЕДУРА</div>
-                                    <div class="history-table__col">ПРИХОД</div>
-                                    <div class="history-table__col">РАСХОД</div>
-                                    <div class="history-table__col">ТАЙМИНГ</div>
-                                    <div class="history-table__col">ИТОГ</div>
-                                </div>
-
-                                <div class="history-table__row">
-                                    <div class="history-table__col">16/09</div>
-                                    <div class="history-table__col"></div>
-                                    <div class="history-table__col"></div>
-                                    <div class="history-table__col"></div>
-                                    <div class="history-table__col"></div>
-                                    <div class="history-table__col"></div>
-                                </div>
-
-                                <div class="history-table__row">
-                                    <div class="history-table__col">16/09</div>
-                                    <div class="history-table__col"></div>
-                                    <div class="history-table__col"></div>
-                                    <div class="history-table__col"></div>
-                                    <div class="history-table__col"></div>
-                                    <div class="history-table__col"></div>
-                                </div>
-
-                                <div class="history-table__row">
-                                    <div class="history-table__col">16/09</div>
-                                    <div class="history-table__col"></div>
-                                    <div class="history-table__col"></div>
-                                    <div class="history-table__col"></div>
-                                    <div class="history-table__col"></div>
-                                    <div class="history-table__col"></div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="history-table__download">
-                            <a class="history-table__load"  href="#">выгрузить в Exel</a>
                         </div>
                     </div>
                 </div>

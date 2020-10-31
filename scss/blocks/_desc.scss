@@ -1,0 +1,12 @@
+.desc {
+    padding: 84px 0;
+
+    @include lg {
+        padding: 36px 0;
+    }
+}
+
+.desc__wrap {
+    max-width: 1264px;
+    margin: auto;
+}
