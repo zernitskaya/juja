@@ -1,0 +1,36 @@
+.check {
+    display: flex;
+    align-items: center;
+}
+
+.check__radio {
+    display: none;
+}
+
+.check__ico {
+    display: block;
+    flex-shrink: 0;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 1px solid $brand2-color;
+    margin-right: 20px;
+}
+
+.check__radio:checked ~ .check__ico {
+    background: $brand2-color;
+}
+
+.check__text {
+    font-weight: 600;
+    font-size: 30px;
+    letter-spacing: 0.055em;
+
+    @include exlg {
+        font-size: 20px;
+    }
+
+    @include md {
+        font-size: 18px;
+    }
+}

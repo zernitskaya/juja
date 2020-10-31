@@ -1,7 +1,10 @@
 .loading {
+    position: relative;
+    z-index: 1;
     width: 1190px;
     background: #FFFFFF;
     border-radius: 50px;
+    margin: auto;
 
     @include exlg {
         width: 98vw;

@@ -57,6 +57,16 @@
     padding-left: 21px;
 }
 
+.button--white {
+    background-color: $main-bg;
+    border: 2px solid $brand2-color;
+
+    &:hover {
+        background-color: $brand2-color;
+        color: $main-bg;
+    }
+}
+
 .done__button {
     width: 80px;
     height: 36px;

@@ -1,7 +1,13 @@
-
-
-.payment__heading {
+.payment__heading.heading {
     margin-left: 170px;
+
+    @include max {
+        width: 100%;
+        max-width: 100%;
+        margin-left: 0;
+        padding: 0;
+        text-align: center;
+    }
 }
 
 .payment__title {
@@ -14,27 +20,46 @@
 
 .payment__wrap {
     margin-left: 170px;
+
+    @include max {
+        margin-left: 0;
+    }
 }
 
 .payment__form {
-    width: 498px;
+    max-width: 498px;
+    width: 100%;
     background: rgba(166, 230, 219, 0.4);
     box-shadow: 5px 5px 20px 5px rgba(0, 0, 0, 0.05);
     border-radius: 50px;
     padding-left: 50px;
+    padding-right: 50px;
     padding-top: 30px;
+
+    @include max {
+        margin: 0 auto;
+    }
+
+    @include md {
+        border-radius: 16px;
+    }
+
+    @include sd {
+        padding: 24px 16px;
+    }
 }
 
 .payment__option {
-    width: 268px;
+    max-width: 268px;
+    width: 100%;
     height: 50px;
     background: #FFFFFF;
     padding-left: 20px;
     padding-right: 20px;
 }
 
-.payment__select { 
-    width: 400px;
+.payment__select {
+    width: 100%;
 }
 
 .payment__choice-label {

@@ -32,8 +32,10 @@
 }
 
 .modal__wrap {
-    position: relative;
-    z-index: 1;
     margin: auto;
     padding: 0 8px;
+
+    @include lg {
+        width: 100%;
+    }
 }

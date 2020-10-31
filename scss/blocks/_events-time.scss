@@ -1,0 +1,7 @@
+.events-time {
+    padding: 160px 0;
+
+    @include max {
+        padding: 64px 0;
+    }
+}
