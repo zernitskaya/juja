@@ -23,3 +23,24 @@
         font-size: 20px;
     }
 }
+
+// .header-page__btn-wrap {
+//     // display: flex;
+// }
+.header-page__btn {
+    width: 300px;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: flex-end;
+    margin-left: 129px;
+}
+
+.header-page__icon-wrap {
+    width: 40px;
+    height: 40px;
+}
+
+.header-page__link {
+    text-decoration: underline;
+    padding-left: 25px;
+}
