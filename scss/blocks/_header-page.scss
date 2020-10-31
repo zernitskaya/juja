@@ -24,15 +24,19 @@
     }
 }
 
-// .header-page__btn-wrap {
-//     // display: flex;
-// }
+.header-page__btn-wrap {
+    margin-left: auto;
+    
+    @include md {
+        display: none;
+    }
+}
+
 .header-page__btn {
-    width: 300px;
     display: flex;
     flex-direction: row-reverse;
-    align-items: flex-end;
-    margin-left: 129px;
+    align-items: center;
+    font-weight: 600;
 }
 
 .header-page__icon-wrap {

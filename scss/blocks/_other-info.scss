@@ -1,0 +1,100 @@
+.other-info {
+    padding: 160px 0;
+
+    @include lg {
+        padding: 64px 0;
+    }
+}
+
+.other-info__title {
+    max-width: 535px;
+    margin-bottom: 84px;
+    margin-left: 100px;
+
+    @include max {
+        margin-left: 0;
+    }
+}
+
+.other-info__props {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 140px;
+    padding-bottom: 90px;
+    background: rgba(166, 230, 219, 0.4);
+    box-shadow: 30px 60px 30px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 50px;
+
+    @include max {
+        padding: 64px;
+        padding-bottom: 32px;
+    }
+    
+    @include exlg {
+        display: block;
+        padding: 48px;
+    }
+
+    @include sd {
+        padding: 16px;
+        border-radius: 16px;
+    }
+}
+
+.other-info__props-item {
+    display: flex;
+    align-items: center;
+    width: 50%;
+    margin-bottom: 50px;
+    padding-right: 16px;
+    text-transform: uppercase;
+    letter-spacing: 0.055em;
+    font-size: 30px;
+
+    @include max {
+        font-size: 20px;
+        margin-bottom: 36px;
+    }
+
+    @include exlg {
+        width: 100%;
+        margin-bottom: 0;
+    }
+
+    &:not(:last-child) {
+        @include exlg {
+            margin-bottom: 24px;
+        }
+    }
+    
+    @include sd {
+        display: block;
+        font-size: 16px;
+    }
+}
+
+.other-info__prop {
+    width: 200px;
+    margin-right: 24px;
+    font-weight: 600;
+
+    @include sd {
+        margin-bottom: 16px;
+    }
+}
+
+.other-info__val {
+    position: relative;
+    padding-bottom: 16px;
+
+    &:before {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        height: 1px;
+        width: 150px;
+        background-color: currentColor;
+    }
+}

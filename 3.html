@@ -157,9 +157,7 @@
                 </div>
 
                 <div class="acordion__desc">
-
                     <div class="schedule">
-
                         <div class="schedule__wrap">
                             <p class="schedule__title">начало и конец рабочего дня</p>
                             <input type="time" class="schedule__option"></input>
@@ -226,10 +224,7 @@
 
                             </div>
                         </div>
-
                     </div>
-
-
                 </div>
             </div>
 
@@ -254,23 +249,22 @@
                                 <div class="spending__name spending__head">НАЗВАНИЕ</div>
                                 <div class="spending__type spending__head">ТИП</div>
                                 <div class="spending__price spending__head">ЦЕНА</div>
+                                <div class="spending__wrap-delete"></div>
                             </div>
 
                             <div class="spending__wrap spending__wrap--table spending__wrap--color">
                                 <div class="spending__data spending__head">16/09</div>
                                 <div class="spending__name"></div>
-                                <div class="spending__type">разовая
-                                    <div class="spending__wrap-arrow">
-                                        <div class="icon-i-small_arrow"></div>
-                                    </div>
+                                <div class="spending__type">
+                                    разовая
                                 </div>
                                 <div class="spending__price"></div>
 
                                 <div class="spending__wrap-delete">
-                                    <div class="spending__wrap-edit">
-                                        <div class="icon-i-edit"></div>
+                                    <button class="spending__wrap-edit" type="button" data-modal-open="edit-modal">
+                                        <span class="icon-i-edit"></span>
+                                    </button>
 
-                                    </div>
                                     <div class="spending__wrap-plus-black">
                                         <div class="icon-i-plus-black"></div>
                                     </div>
@@ -284,10 +278,10 @@
                                 <div class="spending__price"></div>
 
                                 <div class="spending__wrap-delete">
-                                    <div class="spending__wrap-edit">
-                                        <div class="icon-i-edit"></div>
+                                    <button class="spending__wrap-edit" type="button" data-modal-open="edit-modal">
+                                        <span class="icon-i-edit"></span>
+                                    </button>
 
-                                    </div>
                                     <div class="spending__wrap-plus-black">
                                         <div class="icon-i-plus-black"></div>
                                     </div>
@@ -301,10 +295,10 @@
                                 <div class="spending__price"></div>
 
                                 <div class="spending__wrap-delete">
-                                    <div class="spending__wrap-edit">
-                                        <div class="icon-i-edit"></div>
+                                    <button class="spending__wrap-edit" type="button" data-modal-open="edit-modal">
+                                        <span class="icon-i-edit"></span>
+                                    </button>
 
-                                    </div>
                                     <div class="spending__wrap-plus-black">
                                         <div class="icon-i-plus-black"></div>
                                     </div>
@@ -318,18 +312,15 @@
                                 <div class="spending__price"></div>
 
                                 <div class="spending__wrap-delete">
-                                    <div class="spending__wrap-edit">
-                                        <div class="icon-i-edit"></div>
+                                    <button class="spending__wrap-edit" type="button" data-modal-open="edit-modal">
+                                        <span class="icon-i-edit"></span>
+                                    </button>
 
-                                    </div>
                                     <div class="spending__wrap-plus-black">
                                         <div class="icon-i-plus-black"></div>
                                     </div>
                                 </div>
                             </div>
-
-
-
                         </div>
                     </div>
 
@@ -343,9 +334,9 @@
                             </button>
                         </div>
 
-                        <button
-                            class="button--black button--small button map__btn spending__btn-save">сохранить</button>
-
+                        <button class="button--black button--small button map__btn spending__btn-save">
+                            сохранить
+                        </button>
                     </div>
                 </div>
             </div>
@@ -359,33 +350,18 @@
                 </div>
 
                 <div class="acordion__desc">
-
                     <div class="conteiner">
 
-                    <div class="acordion__download">
-                        <div class="download">
-                            <div class="icon-i-download"></div>
-                        </div>
-                        <p class="acordion__text-download"> загрузить</p>
-                    </div>
-
-                    <div class="loading">
-                        <div class="loading__wrap">
-                            <div class="loading__wrap-icon">
-                                <div class="icon-i-loading"></div>
-                            </div>
-
-                            <div class="loading__form-input">
-                                <div class="loading__caption profile__caption">загрузите фото с устройства
-                                    или добавьте ссылку
+                        <div class="acordion__download-wrap">
+                            <div class="acordion__download" data-modal-open="loading">
+                                <div class="download">
+                                    <div class="icon-i-download"></div>
                                 </div>
-                                <input type="text" class="item-inpu loading__input">
+
+                                <p class="acordion__text-download"> загрузить</p>
                             </div>
                         </div>
                     </div>
-
-                </div>
-
 
                     <div class="gallery">
                         <div class="gallery__item">
@@ -508,6 +484,87 @@
             </div>
         </div>
     </footer>
+
+    <div class="modal" data-modal-name="loading">
+        <div class="modal__overlay" data-modal-close="loading"></div>
+
+        <div class="modal__wrap">
+            <div class="modal__close">
+                <button class="close" type="button" data-modal-close="loading"></button>
+            </div>
+
+            <div class="loading">
+                <div class="loading__wrap">
+                    <div class="loading__wrap-icon">
+                        <input class="loading__input-file" type="file">
+                        <div class="icon-i-loading"></div>
+                    </div>
+
+                    <div class="loading__form-input">
+                        <div class="loading__caption profile__caption">загрузите фото с устройства
+                            или добавьте ссылку
+                        </div>
+                        <input type="text" class="item-inpu loading__input">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal" data-modal-name="edit-modal">
+        <div class="modal__overlay" data-modal-close="edit-modal"></div>
+
+        <div class="modal__wrap">
+            <div class="modal__close">
+                <button class="close" type="button" data-modal-close="edit-modal"></button>
+            </div>
+
+            <div class="edit-modal">
+                <div class="edit-modal__title">добавление затрат</div>
+
+                <form class="edit-modal__form">
+                    <fieldset class="edit-modal__form-inputs">
+                        <div class="edit-modal__form-item">
+                            <div class="edit-modal__item-text">
+                                введите название (например, аренда)
+                            </div>
+
+                            <div class="edit-modal__item-input">
+                                <input type="text" class="item-input">
+                            </div>
+                        </div>
+
+                        <div class="edit-modal__form-item">
+                            <div class="edit-modal__item-text">
+                                Цена
+                            </div>
+
+                            <div class="edit-modal__item-input">
+                                <input type="text" class="item-input">
+                            </div>
+                        </div>
+
+                        <div class="edit-modal__form-item">
+                            <div class="edit-modal__item-text">
+                                Выберите тип затраты
+                            </div>
+
+                            <div class="edit-modal__item-input">
+                                <div class="select3">
+                                    <select class="select3__input">
+                                        <option>type 1</option>
+                                        <option>type 1</option>
+                                    </select>
+
+                                    <div class="select3__input-icon"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+    </div>
 
     <script src="js/main.js"></script>
 </body>

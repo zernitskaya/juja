@@ -1,0 +1,46 @@
+.process-start {
+    display: flex;
+    cursor: pointer;
+
+    &:active {
+        opacity: .8;
+    }
+
+    @include lg {
+        align-items: center;
+    }
+
+    @include sd {
+        padding-top: 16px;
+    }
+}
+
+.process-start__icon-start {
+    width: 100px;
+    height: 100px;
+    margin-right: 34px;
+
+    @include lg {
+        width: 46px;
+        height: 46px;
+    }
+
+    @include sd {
+        margin-right: 16px;
+    }
+}
+
+.process-start__start-text {
+    width: 220px;
+    font-size: 50px;
+    letter-spacing: 0.055em;
+    word-break: break-word;
+
+    @include max {
+        font-size: 32px;
+    }
+
+    @include lg {
+        font-size: 16px;
+    }
+}

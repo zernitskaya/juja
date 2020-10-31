@@ -1,0 +1,40 @@
+.select2 {
+    position: relative;
+    display: block;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 100%;
+    letter-spacing: 0.055em;
+    cursor: pointer;
+
+    @include sd {
+        font-size: 18px;
+    }
+}
+
+.select2__input {
+    position: relative;
+    z-index: 2;
+    padding-right: 40px;
+
+    @include sd {
+        padding-right: 20px;
+    }
+}
+
+.select2__input-icon {
+    position: absolute;
+    right: 5px;
+    top: 3px;
+    width: 16px;
+    height: 16px;
+    border-bottom: 1px solid;
+    border-right: 1px solid;
+    transform: rotate(45deg);
+
+    @include sd {
+        top: -1px;
+        width: 10px;
+        height: 10px;
+    }
+}

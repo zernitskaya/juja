@@ -1,5 +1,5 @@
 .spending {
-    max-width: 1000px;
+    max-width: 1300px;
     min-width: 700px;
     margin: 0 auto;
 }
@@ -7,16 +7,18 @@
 .spending__wrap {
     display: flex;
     align-items: center;
-
-    @include exlg {
-    //    flex-direction: column;
-    }
 }
 
+.spending__wrap > * {
+    height: 80px;
+    padding: 20px;
+}
+
+.spending__wrap:not(.spending__wrap-heading) > *:nth-child(even){
+    background: #dbf5f1;
+}
 
 .spending__wrap--table {
-    height: 80px;
-    padding: 20px 0 20px;
     border-bottom: 1px solid black;
     font-weight: 300;
     font-size: 20px;
@@ -31,27 +33,24 @@
 
 .spending__data {
     width: 150px;
+    flex: 1;
 }
 
 .spending__name {
     width: 350px;
+    flex: 3;
 }
 
 .spending__type {
     width: 200px;
     position: relative;
+    flex: 1;
+    word-break: break-word;
 }
 
 .spending__price {
     width: 200px;
-}
-
-.spending__wrap-arrow {
-    width: 13px;
-    height: 14px;
-    position: absolute;
-    left: 100px;
-    bottom: 4px;
+    flex: 1;
 }
 
 .spending__add {
@@ -75,22 +74,26 @@
 }
 
 .spending__wrap-delete {
-    display: none;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex: 1;
+    cursor: pointer;
+    opacity: 0;
 }
 
 .spending__wrap:hover .spending__wrap-delete {
-    display: flex;
-    align-items: center;
-    cursor: pointer;
-
-    &:active {
-        opacity: .5;
-    }
+    opacity: 1;
 }
 
 .spending__wrap-edit {
     width: 35px;
     height: 35px;
+    cursor: pointer;
+
+    &:active {
+        opacity: .5;
+    }
 }
 
 .spending__wrap-plus-black {
@@ -100,10 +103,11 @@
     border-radius: 100px;
     background: black;
     margin-left: 20px;
-}
+    cursor: pointer;
 
-.spending__wrap-heading {
-    margin-bottom: 30px;
+    &:active {
+        opacity: .5;
+    }
 }
 
 .spending__btn {

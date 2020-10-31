@@ -1,0 +1,48 @@
+.profile-partner {
+    padding: 160px;
+
+    @include max {
+        padding: 60px 0;
+    }
+}
+
+.profile-partner__wrap {
+    max-width: 860px;
+    margin: 0 auto;
+}
+
+.profile-partner__top {
+    display: flex;
+    align-items: center;
+    margin-bottom: 24px;
+}
+
+.profile-partner__icon {
+    width: 200px;
+    height: 200px;
+    margin-right: 16px;
+
+    @include lg {
+        width: 100px;
+        height: 100px;
+    }
+}
+
+.profile-partner__text {
+    font-size: 40px;
+    letter-spacing: 0.055em;
+
+    @include lg {
+        font-size: 20px;
+    }
+}
+
+.profile-partner__bot {
+    font-weight: 600;
+    font-size: 40px;
+    letter-spacing: 0.055em;
+
+    @include lg {
+        font-size: 20px;
+    }
+}

@@ -1,0 +1,75 @@
+.select-props {
+    padding-bottom: 170px;
+
+    @include md {
+        padding-bottom: 64px;
+    }
+}
+
+.select-props__title {
+    margin-left: 100px;
+    margin-bottom: 94px;
+    max-width: 500px;
+
+    @include max {
+        margin-left: 0;
+    }
+}
+
+.select-props__text {
+    margin-bottom: 100px;
+    max-width: 390px;
+    padding-bottom: 32px;
+    border-bottom: 1px solid;
+    font-size: 30px;
+    letter-spacing: 0.055em;
+
+    @include exlg {
+        font-size: 24px;
+    }
+
+    @include md {
+        margin-bottom: 48px;
+    }
+}
+
+.select-props__item {
+    padding: 64px;
+    background: rgba(166, 230, 219, 0.4);
+    box-shadow: 30px 60px 30px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 50px;
+
+    @include exlg {
+        display: block;
+        padding: 48px;
+    }
+
+    @include md {
+        padding: 32px;
+    }
+
+    @include sd {
+        padding: 16px;
+        border-radius: 16px;
+    }
+}
+
+.select-props__list {
+    display: flex;
+    flex-wrap: wrap;
+
+    @include md {
+        display: block;
+    }
+}
+
+.select-props__list-item {
+    width: 50%;
+    padding-left: 10px;
+    margin-bottom: 40px;
+
+    @include md {
+        margin-bottom: 32px;
+        width: 100%;
+    }
+}

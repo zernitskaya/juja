@@ -1,0 +1,44 @@
+.profile-money {
+    padding-bottom: 160px;
+
+    @include exlg {
+        padding-bottom: 60px;
+    }
+}
+
+.profile-money__title {
+    padding-left: 100px;
+    margin-bottom: 74px;
+
+    @include lg {
+        padding: 0;
+        margin-bottom: 48px;
+    }
+}
+
+.profile-money__form {
+    padding: 40px 140px;
+    background: rgba(166, 230, 219, 0.4);
+    box-shadow: 5px 5px 20px 5px rgba(0, 0, 0, 0.05);
+    border-radius: 50px;
+
+    @include lg {
+        padding: 40px;
+    }
+
+    @include md {
+        border-radius: 16px;
+    }
+
+    @include sd {
+        padding: 16px;
+    }
+}
+
+.profile-money__form-item:not(:last-child) {
+    margin-bottom: 64px;
+
+    @include lg {
+        margin-bottom: 32px;
+    }
+}
