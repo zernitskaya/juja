@@ -1,41 +1,69 @@
 .loading {
-    max-width: 1000px;
-    // min-height: 600px;
+    width: 1190px;
+    background: #FFFFFF;
+    border-radius: 50px;
 
-    background: rgba(166, 230, 219, 0.4);
-    margin: 0 auto;
-    text-align: center;
+    @include exlg {
+        width: 98vw;
+        max-width: 740px;
+    }
+
+    @include md {
+        border-radius: 16px;
+    }
 }
+
 .loading__wrap {
     display: flex;
     flex-direction: column;
     align-items: center;
     padding-top: 200px;
     padding-bottom: 200px;
+
+    @include exlg {
+        padding: 64px 16px;
+    }
 }
 
 .loading__form-input {
-    width: 700px;
+    max-width: 700px;
     font-weight: 600;
     font-size: 20px;
     letter-spacing: 0.055em;
-    
+
+    @include exlg {
+       max-width: 500px;
+    }
 }
 
 .loading__wrap-icon {
+    position: relative;
     margin-bottom: 70px;
     width: 50px;
     height: 50px;
+}
+
+.loading__input-file {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    cursor: pointer;
 }
 
 .loading__caption {
     font-weight: 600;
     font-size: 48px;
     letter-spacing: 0.055em;
+
+    @include exlg {
+        font-size: 24px;
+    }
 }
 
 .loading__input {
     width: 100%;
     border-bottom: 1px solid $brand2-color;
-    margin-bottom: 20px;
 }

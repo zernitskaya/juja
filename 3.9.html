@@ -60,67 +60,105 @@
                 </h2>
 
                 <div class="payment__wrap">
+                    <form class="payment__form">
+                        <p class="payment__title">с</p>
+                        <input type="time" class="payment__option">
 
-                    <p class="payment__title">с</p>
-                    <input type="time" class="payment__option"></input>
-                    <p class="payment__title">до</p>
-                    <input type="time" class="payment__option"></input>
+                        <p class="payment__title">до</p>
+                        <input type="time" class="payment__option">
 
-                    <p class="payment__title">по всем клиентам</p>
+                        <p class="payment__title">по всем клиентам</p>
 
-                    <div class="select-time payment__select">
+                        <div class="select-time payment__select">
+                            <select class="select-time__option">
+                                <option value="10:00">10:00</option>
+                                <option value="10:00">10:00</option>
+                                <option value="10:00">10:00</option>
+                            </select>
 
-                        <select class="select-time__option">
-                            <!-- <option value="10:00">10:00</option>
-                            <option value="10:00">10:00</option>
-                            <option value="10:00">10:00</option> -->
-                        </select>
-                        <div class="select-time__icon">
-                            <div class="icon-i-small_arrow"></div>
+                            <div class="select-time__icon">
+                                <div class="icon-i-small_arrow"></div>
+                            </div>
                         </div>
-                    </div>
 
-                    <p class="payment__title">все процедуры</p>
+                        <p class="payment__title">все процедуры</p>
 
-                    <div class="select-time payment__select">
-                        <select class="select-time__option">
-                            <!-- <option value="10:00">10:00</option>
-                            <option value="10:00">10:00</option>
-                            <option value="10:00">10:00</option> -->
-                        </select>
-                        <div class="select-time__icon">
-                            <div class="icon-i-small_arrow"></div>
+                        <div class="select-time payment__select">
+                            <select class="select-time__option">
+                                <option value="10:00">10:00</option>
+                                <option value="10:00">10:00</option>
+                                <option value="10:00">10:00</option>
+                            </select>
+
+                            <div class="select-time__icon">
+                                <div class="icon-i-small_arrow"></div>
+                            </div>
                         </div>
-                    </div>
 
-                    <form class="payment__choice">
-                        <label class="payment__choice-label">
-                            <input name="radio" type="radio" class="hiden-choice__radio">
-                            <span class="hiden-choice__ico"></span>
-                            <span class="payment__choice-text"> Показать общие затраты</span>
-                        </label>
+                        <div class="payment__choice">
+                            <label class="payment__choice-label">
+                                <input name="radio" type="radio" class="hiden-choice__radio">
+                                <span class="hiden-choice__ico"></span>
+                                <span class="payment__choice-text"> Показать общие затраты</span>
+                            </label>
 
-                        <label class="payment__choice-label">
-                            <input name="radio" type="radio" class="hiden-choice__radio">
-                            <span class="hiden-choice__ico"></span>
-                            <span class="payment__choice-text"> Показать затраты по клиентам</span>
-                        </label>
+                            <label class="payment__choice-label">
+                                <input name="radio" type="radio" class="hiden-choice__radio">
+                                <span class="hiden-choice__ico"></span>
+                                <span class="payment__choice-text"> Показать затраты по клиентам</span>
+                            </label>
+                        </div>
                     </form>
-                </div>
-                
-                ТУТ ТАБЛИЦА!!!!!!!
 
-                <div class="acordion__download">
-                    <div class="download">
-                        <div class="icon-i-download"></div>
+                    <div class="payment__table">
+                        <div class="history-table">
+                            <div class="history-table__overflow">
+                                <div class="history-table__table">
+                                    <div class="history-table__row">
+                                        <div class="history-table__col">ДАТА</div>
+                                        <div class="history-table__col">ПРОЦЕДУРА</div>
+                                        <div class="history-table__col">ПРИХОД</div>
+                                        <div class="history-table__col">РАСХОД</div>
+                                        <div class="history-table__col">ТАЙМИНГ</div>
+                                        <div class="history-table__col">ИТОГ</div>
+                                    </div>
+
+                                    <div class="history-table__row">
+                                        <div class="history-table__col">16/09</div>
+                                        <div class="history-table__col"></div>
+                                        <div class="history-table__col"></div>
+                                        <div class="history-table__col"></div>
+                                        <div class="history-table__col"></div>
+                                        <div class="history-table__col"></div>
+                                    </div>
+
+                                    <div class="history-table__row">
+                                        <div class="history-table__col">16/09</div>
+                                        <div class="history-table__col"></div>
+                                        <div class="history-table__col"></div>
+                                        <div class="history-table__col"></div>
+                                        <div class="history-table__col"></div>
+                                        <div class="history-table__col"></div>
+                                    </div>
+
+                                    <div class="history-table__row">
+                                        <div class="history-table__col">16/09</div>
+                                        <div class="history-table__col"></div>
+                                        <div class="history-table__col"></div>
+                                        <div class="history-table__col"></div>
+                                        <div class="history-table__col"></div>
+                                        <div class="history-table__col"></div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="history-table__download">
+                                <a class="history-table__load"  href="#">выгрузить в Exel</a>
+                            </div>
+                        </div>
                     </div>
-                    <p class="acordion__text-download payment__text-download">выгрузить в Exel</p>
                 </div>
-
             </div>
-        </div>
-
-
         </div>
     </section>
 </body>

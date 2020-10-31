@@ -254,15 +254,14 @@
                                 <div class="spending__name spending__head">НАЗВАНИЕ</div>
                                 <div class="spending__type spending__head">ТИП</div>
                                 <div class="spending__price spending__head">ЦЕНА</div>
+                                <div class="spending__wrap-delete"></div>
                             </div>
 
                             <div class="spending__wrap spending__wrap--table spending__wrap--color">
                                 <div class="spending__data spending__head">16/09</div>
                                 <div class="spending__name"></div>
-                                <div class="spending__type">разовая
-                                    <div class="spending__wrap-arrow">
-                                        <div class="icon-i-small_arrow"></div>
-                                    </div>
+                                <div class="spending__type">
+                                    разовая
                                 </div>
                                 <div class="spending__price"></div>
 
@@ -327,9 +326,6 @@
                                     </div>
                                 </div>
                             </div>
-
-
-
                         </div>
                     </div>
 
@@ -343,8 +339,9 @@
                             </button>
                         </div>
 
-                        <button
-                            class="button--black button--small button map__btn spending__btn-save">сохранить</button>
+                        <button class="button--black button--small button map__btn spending__btn-save">
+                            сохранить
+                        </button>
 
                     </div>
                 </div>
@@ -359,33 +356,18 @@
                 </div>
 
                 <div class="acordion__desc">
-
                     <div class="conteiner">
 
-                    <div class="acordion__download">
-                        <div class="download">
-                            <div class="icon-i-download"></div>
-                        </div>
-                        <p class="acordion__text-download"> загрузить</p>
-                    </div>
-
-                    <div class="loading">
-                        <div class="loading__wrap">
-                            <div class="loading__wrap-icon">
-                                <div class="icon-i-loading"></div>
-                            </div>
-
-                            <div class="loading__form-input">
-                                <div class="loading__caption profile__caption">загрузите фото с устройства
-                                    или добавьте ссылку
+                        <div class="acordion__download-wrap">
+                            <div class="acordion__download" data-modal-open="loading">
+                                <div class="download">
+                                    <div class="icon-i-download"></div>
                                 </div>
-                                <input type="text" class="item-inpu loading__input">
+
+                                <p class="acordion__text-download"> загрузить</p>
                             </div>
                         </div>
                     </div>
-
-                </div>
-
 
                     <div class="gallery">
                         <div class="gallery__item">
@@ -508,6 +490,32 @@
             </div>
         </div>
     </footer>
+
+    <div class="modal" data-modal-name="loading">
+        <div class="modal__overlay" data-modal-close="loading"></div>
+
+        <div class="modal__wrap">
+            <div class="modal__close">
+                <button class="close" type="button" data-modal-close="loading"></button>
+            </div>
+
+            <div class="loading">
+                <div class="loading__wrap">
+                    <div class="loading__wrap-icon">
+                        <input class="loading__input-file" type="file">
+                        <div class="icon-i-loading"></div>
+                    </div>
+
+                    <div class="loading__form-input">
+                        <div class="loading__caption profile__caption">загрузите фото с устройства
+                            или добавьте ссылку
+                        </div>
+                        <input type="text" class="item-inpu loading__input">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <script src="js/main.js"></script>
 </body>
